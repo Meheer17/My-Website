@@ -1,0 +1,235 @@
+/*imp*/
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: monospace;
+}
+
+html{
+        scroll-behavior: smooth;
+}
+
+body{
+        background-image:linear-gradient(62deg, #4984be 0%, #3bb3d4 100%);
+        font-size: 24px;
+        font-weight: bold;
+}
+
+/* NAVBAR */
+#header{
+        height:70px;
+        width: 100%;
+        display:flex;
+        position: fixed;
+        align-items: center;
+        z-index: 5;
+        transition:0.3s;
+        background-color: transparent;
+}
+
+.navbar{
+        font-size: 20px;
+        align-items: center;
+        height: 70px;
+        width: 100%;
+        padding-top: 5px;
+        position:relative;
+        overflow: hidden;  
+        user-select: none;
+        list-style:none;
+        padding-bottom:10px;
+}
+
+.navbar-links{
+        display:flex; 
+        margin-left: auto;
+        margin-right: 10px;
+        float: right;
+}
+
+.circle-logo{
+        padding-top: 10px;
+        padding: 1.3rem;
+        margin-left: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+}
+.circle-logo img{
+        padding-top: 10px;
+        width: 80px;
+        height: 80px; 
+}
+
+.navbar-links li{
+        padding: 15px 10px 10px 15px;
+        list-style: none;
+        cursor: pointer;
+}
+
+.navbar li:hover{
+        background-color: rgb(50, 50, 50);
+        border-radius: 8px;
+        box-shadow:inset 3px 3px 4px rgb(51, 51, 51); 
+        transition-duration:0.5s;
+}
+
+.navbar-links a {
+        text-decoration: none;
+        color:white;
+        display: block;
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger div{
+	width: 30px;
+	height: 3px;
+	background: #dbdbdb;
+	margin: 5px;
+	transition:all 0.3s ease;
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity:0;
+		transform: translateY(100px);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media only screen and (max-width: 500px) {
+  #gh{height:12px;} /*IGNORE*/
+   body{
+        overflow-x: hidden;
+   }
+    .circle-logo{
+        position:absolute;
+        margin-right:80%;
+    }   
+    .circle-logo img{
+        height: 70px;
+        width: 80px;
+    }
+    .navbar-links{
+        display:initial;
+        margin-right: 100px;
+    }
+    #header{
+        height: 80px;
+        background-color: rgb(50, 50, 50);
+    }
+    .navbar{
+        position: fixed;
+        top: 65px;        
+        right:0;
+        width:60%;
+        margin-left:30px;
+        margin-right:auto;
+        height: 100%;
+        transform: translateX(100%);
+        background:rgb(50, 50, 50);
+        flex-direction: column;
+        transition: transform 0.5s ease-in;
+        z-index: 1; 
+    }
+    .hamburger{
+        position:absolute;
+        top: 20px;
+        right: 20px;
+        display: block;
+        cursor:pointer;
+        z-index: 5;
+    }   
+    .navbar-links li{  
+        opacity:0;
+    }
+
+    .navbar li:hover{
+        border-radius: 8px;
+        box-shadow:inset 2px 2px 5px black;
+    }
+}
+.nav-active{
+        transform:translateX(0%);
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar{
+    width:10px;
+    background-color:black;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background-color:rgb(219, 125, 17);
+    border:2px solid #92530b;
+}
+
+::-webkit-scrollbar-track{
+    margin-top:30px;
+    border-radius:20px;
+}
+
+/*Sections*/
+#welcome{
+    height: 100vh;
+    background-image: linear-gradient(62deg, #000000c0 0%, #000000b9 100%) ,url('images/cool.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+#abt {
+    height: 100vh;
+}
+/*Others*/
+.center{
+  text-align: center;
+  padding-top: 35vh;
+}
+
+.inline-center{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.text{
+  color:white;
+  text-shadow: 3px 3px 20px #00a9e2;
+}
+
+.scam{
+    padding-top: 50px;
+    background-image: linear-gradient(62deg, #000000c0 0%, #000000b9 100%), url('images/projects.jpeg');
+    height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards {
+    display: flex;
+/* Put a card in the next row when previous cards take all width */
+    flex-wrap: wrap;
+}
