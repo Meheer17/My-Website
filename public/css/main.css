@@ -11,7 +11,8 @@ html{
 }
 
 body{
-        background-image:linear-gradient(62deg, #4984be 0%, #3bb3d4 100%);
+        /* background-image:linear-gradient(62deg, #242424 0%, #5c5c5cb9 100%); */
+        background-color:#16161A;
         font-size: 24px;
         font-weight: bold;
 }
@@ -191,21 +192,22 @@ body{
 /*Sections*/
 #welcome{
     height: 100vh;
-    background-image: linear-gradient(62deg, #000000c0 0%, #000000b9 100%) ,url('images/cool.jpg');
+    background-image: linear-gradient(62deg, #1d1d1d9d 0%, #1b1b1b9d 100%) ,url('images/cool.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: black;
+    color: white;
 }
 
-#abt {
+#abt{
     height: 100vh;
 }
 /*Others*/
 .center{
   text-align: center;
-  padding-top: 35vh;
+  padding-top: 45vh;
+  padding-left: 87vh;
 }
 
 .inline-center{
@@ -213,9 +215,37 @@ body{
     text-align: center;
 }
 
+.container{
+    margin: 10px;
+    padding: 10px;
+}
+
+.sub{
+    background: #16161A;
+    border-radius: 10px;
+    padding: 10px;
+    color: #7f8a9a;
+}
+
+.s-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.sub2{
+    background: #16161A;
+    border-radius: 20px;
+    padding: 10px;
+    color: #7f8a9a;
+    margin-top: 5px;
+    width: 50%;
+}
+
 .text{
   color:white;
   text-shadow: 3px 3px 20px #00a9e2;
+  font-size: 50px;
 }
 
 .scam{
@@ -228,8 +258,32 @@ body{
     background-size: cover;
 }
 
+.hl1{
+    color: rgb(255, 255, 255);
+    background-color: #6bf05a; 
+    margin: 0 15px 0px 15px;
+    border-radius: 20px; 
+}
+
 .cards {
     display: flex;
 /* Put a card in the next row when previous cards take all width */
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 500px) {
+    .adsf{a:as;}
+    .s-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    }
+    .sub2{
+    background: #16161A;
+    border-radius: 20px;
+    padding: 10px;
+    color: #7f8a9a;
+    margin-top: 5px;
+    width: 100%;
+}
 }
