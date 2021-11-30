@@ -4,7 +4,6 @@ const path = require('path');
 const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
@@ -16,5 +15,5 @@ app.get('/projects', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('server started');
+  console.log('server started')
 });
