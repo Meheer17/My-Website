@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>ENGLISH PROJECT</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+    *{ 
+   margin:0;
+   padding:0;
+   font-weight:bold;
+   }
+html{ 
+  scroll-behavior: smooth;
+  }
+  body{
+     font-family: 'Dosis', sans-serif;
+     background-color: black;
+  }
+nav{
+ position:fixed;
+  width:100%; 
+   height:40px; 
+   padding-top:17px;
+   }
+ul{float:right;}
+li{
+  list-style:none; 
+  display:inline; 
+  padding:20px; 
+  font-size:20px;
+  }
+a{text-decoration:none;}
+a li{color:#9c8f8f;}
+ul li:hover{
+  background-color:#45567D;
+ cursor:pointer;}
+
+#Information-section{
+  margin: 0px;
+  color:white;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #403a3ab4 0%, #191717b2 100%),
+  url(https://vikasacharya.files.wordpress.com/2016/05/atribe2.png?w=1200);
+  height:100vh;
+   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom:1px;
+}
+
+#two-section{
+  margin: 0px;
+  color:black;
+  background-color: rgb(0, 0, 0);
+  background-image: linear-gradient(62deg, #312d2de1 0%, #191717cc 100%), url(https://www.thefactresearch.com/wp-content/uploads/2018/06/TheTravel.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:110vh;
+  padding:10PX;
+   margin-bottom:1px;
+}
+#three-section{
+  margin: 0px;
+  color:black;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #403a3ab4 0%, #191717b2 100%),
+  url(https://realbharat.org/wp-content/uploads/2015/10/_d_improd_/_d_improd_/masaimarai-770x509_f_improf_600x397_f_improf_600x397.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100vh;
+  margin-bottom:1px;
+}
+#four-section{
+  margin: 0px;
+  color:black;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #403a3a7e 0%, #19171760 100%), url(https://cdn.newsapi.com.au/image/v1/027cd6a4e7d0e022a8bc150bd72842e9);
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom:1px;
+}
+#five-section{
+  margin: 0px;
+  color:black;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #403a3a7e 0%, #19171760 100%), url(https://static.toiimg.com/photo/64258825.cms);
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom:1px;
+}
+#six-section{
+  margin: 0px;
+  color:black;
+  background-color: #000;
+ background-image: linear-gradient(62deg, #403a3a7e 0%, #19171760 100%), url(https://www.swantour.com/blogs/wp-content/uploads/2017/11/Tribals-of-Andaman-Islands-1.jpg);
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom:1px;
+}
+#seven-section{
+  margin: 0px;
+  color:black;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #403a3a7e 0%, #19171760 100%), url(https://images2.minutemediacdn.com/image/upload/c_crop,h_1351,w_2400,x_0,y_0/v1571796144/shape/mentalfloss/604599-gettyimages-1083893950.jpg?itok=om3ZU-xi);
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom:1px;
+}
+.centered {
+ position: absolute;
+  bottom: 50%;
+  left: 50px;
+  font-size:40px;
+}
+button{
+  padding:8px;
+  border-radius:15px;
+  background-color:white;
+  color:black;
+  border:none;
+}
+button:hover{
+  background-color:rgb(72, 95, 172);
+  transition-duration:0.5s;  
+  transform: 1;
+}
+ .c{
+ color:black;
+ padding:10px;
+ width:60%;
+ color:white ;
+ float: left;
+ 
+ margin-top:10vh;
+ margin-left:5vh;
+ border-radius:10px;
+ }
+.swing{
+  box-shadow: 15px 15px 8px #000;
+ width:25%;
+ height: 35%;
+ margin-top:10vh;
+ float:right;
+ padding:4px, 4px, 10px, 4px;
+ background-color:white;
+ margin-right: 5%;
+ border-radius:15px;
+}
+.swing:hover{
+ content:"";
+ transform-origin: center -3px;
+ animation:swings;
+ animation-direction: alternate;
+ animation-duration:1s;
+ box-shadow:15px 15px 8px #000 ,20px 20px 13px red ;
+}
+@keyframes swings {
+  0% {transform: rotate(0deg)}
+  25% {transform: rotate(15deg)}
+  75% {transform: rotate(-15deg)}
+  100% {transform: rotate(0deg)}
+}
+img{
+  border-radius:15px; 
+  padding:5px;
+  margin-left:auto; 
+  margin-right:auto;
+}
+h2{
+  margin-top:10px;
+}
+.cc{
+  text-align:center;
+  color:white;
+  padding:150px;
+  width:30%;
+  float:left;
+  margin:40px;
+}
+audio{
+  margin-right: 5%;
+ height:30px;
+ margin-top: 20px;
+ float:right;
+}
+.o{
+ background-image:linear-gradient(90deg,rgba(0, 0, 0, 0.589) 0%, rgba(0, 0, 0, 0.418))
+}
+</style>
+<body>
+	<!-- nav bar starts -->
+	<nav id="navbar">
+		<ul>
+			<a href="#Information-section">
+				<li>HOME</li>
+			</a>
+			<a href="#two-section">
+				<li>INTRO</li>
+			</a>
+			<a href="#three-section">
+				<li>SOCIETY</li>
+			</a>
+			<a href="#four-section">
+				<li>CULTURE</li>
+			</a>
+			<a href="#five-section">
+				<li>FAMED</li>
+			</a>
+			<a href="#six-section">
+				<li>CHECK UP</li>
+			</a>
+			<a href="#seven-section">
+				<li>DONE BY</li>
+			</a>
+		</ul>
+	</nav>
+	<!-- navbar ends -->
+
+	<!-- info section start-->
+	<section id="Information-section">
+		<p class="centered">
+			The North Sentinel Tribe
+			<br>
+     <a style="color:black;" href="#two-section"><button>EXPLORE</button></a>
+    </p>
+    </section>
+    <!-- info section ends-->
+
+    <!-- 2 section start-->
+    <section id="two-section">
+      <div class="c o"> 
+      <h2><u>INTRODUCTION:</u></h2>
+      <p>The Sentinelese live on North Sentinel Island in the Andaman Islands, which are in the Bay of Bengal and administered by India. The island lies off the southwest coast of South Andaman Island, about 64 km west of Andaman capital Port Blair.</p><br>
+       <h2><u>ORIGIN:</u></h2>
+      <p>The Sentinelese, also known as the Sentineli and the North Sentinel Islanders, are an indigenous people who inhabit North Sentinel Island in the Bay of Bengal in India. Designated a Particularly Vulnerable Tribal Group and a Scheduled Tribe, they belong to the broader class of Andamanese peoples.</p><br>
+     <h2><u> POPULATION:</u></h2>
+     <p> Sentinelese, with a population of about 50 to 100 on the North Sentinel Island, are not only among the most isolated of nearly 70 PVTGs across the country, but also among the five in the Andaman and Nicobar Islands which include Great Andamanese, jarawa etc. </p><br>
+     <h2><u>OCCUPATION:</u></h2>
+     <p>The Sentinelese hunt and gather in the forest, and fish in the coastal waters.They also make boats – these are very narrow outrigger canoes which can only be used in shallow waters as they are steered and propelled with a pole like a punt.</p><br>
+    
+      </div>
+      <figure class="swing mb">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/North_Sentinel_Island.jpg" width="96%" height="90%">
+      </figure>
+       <audio controls><source src="anuhya.mp3" type="audio/mpeg"></audio>
+      <figure class="swing">
+       <img src="https://www.iasbhai.com/wp-content/uploads/Who-are-the-Sentinelese-UPSC.jpg" width="96%" height="90%">
+      </figure>
+    </section>
+    <!-- 2 section ends-->
+
+    <!-- 3 section start-->
+    <section id="three-section">
+      <div class="c o"> 
+      <h2><u>FOOD THEY EAT:</u></h2>
+      <p>The Sentinelese are hunter-gatherers. They likely use bows and arrows to hunt terrestrial wildlife and more rudimentary methods to catch local seafood, such as mud crabs and molluscan shells. They are believed to eat a lot of molluscs, given the abundance of roasted shells found in their settlements and also eat wild animals and gather fruits, tubers, honey or insects, anything that is edible</p><br>
+      <h2><u>SOCIETY:</u></h2>
+      <p>The Sentinelese. The Sentinelese are an uncontacted tribe living on North Sentinal Island, one of the Andaman Islands in the Indian Ocean. They vigorously reject all contact with outsiders.</p><br>
+      <h2><u>THE OTHER TRIBES NEARBY:</u></h2>
+      <p>Along with the Great Andamanese, the Jarawas, the Onge, the Shompen, and the Nicobarese, the Sentinelese are one of the six native and often reclusive peoples of the Andaman and Nicobar Islands. Unlike the others, the Sentinelese appear to have consistently refused any interaction with the outside world.</p>
+      </div>
+      <figure class="swing">
+       <img src="data:image/jpeg;base64,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" width="96%" height="90%">
+      </figure>
+       <audio controls><source src="meheer.mp3" type="audio/mpeg"></audio>
+      <figure class="swing">
+       <img src="https://www.gktoday.in/wp-content/uploads/2019/02/Image-45.png" width="96%" height="90%">
+      </figure>
+    </section>
+    <!-- 3 section ends-->
+
+    <!--4 section start-->
+    <section id="four-section">
+      <div class="c o"> 
+      <h2><u>LANGUAGE:</u></h2>
+      <p>It is presumed that the natives speak a single language that has more similarities with the Ongan language family than the Great Andamanese languages. But upon attempts made to have some of the Onge tribal people to meet and communicate with the sentinelese, it was found that neither of the two could understand the other. Thus the language of the tribe remains uncertain.</p><br>
+      <h2><u>CLOTHING:</u></h2>
+      <p>A video of the Sentinelese, taken from helicopters, suggests that they use fiber strings and leaves to decorate their bodies and do not wear any clothes. Headbands, prepared from vines, and belts, made from barks, are used by men as fashionable items and also as protective tools when they go on hunting expeditions. It is assumed that they use natural resources like colored rocks, and wild fruits to dye their clothes red.</p><br>
+      <h2><u>CUSTOMS/RELIGIOUS BELIEFS:</u></h2>
+      <p>The only information available regarding the tribe’s religion concerns their unique burial ritual. An infant, after his death, is buried and a “nautilus shell” along with a few small seashells is placed on top of the grave.The tribe’s aggressive attitude in keeping out anyone trying to come in contact also points at the fact that maybe they consider the latter as demons or bad omens.</p><br>
+      </div>
+      <figure class="swing">
+       <img src="https://i.natgeofe.com/n/16ea2ff1-c5cf-465e-beec-2ca6633fc9f0/01_madhumala-with-jarawa-2_16x9.jpg?w=636&h=358" width="96%" height="90%">
+      </figure>
+       <audio controls><source src="sanjana.mp3" type="audio/mpeg"></audio>
+      <figure class="swing">
+       <img src="https://www.swantour.com/blogs/wp-content/uploads/2017/11/Jarawas-of-Andaman.jpg" width="96%" height="90%">
+      </figure>
+    </section>
+    <!-- 4 section ends-->
+
+    <!-- 5 section start-->
+    <section id="five-section">
+      <div class="c o"> 
+      <h2><u>FAMED</u></h2>
+      <p>This infamous island is a part of the Andaman islands located in the bay of Bengal. Here live the sentinel tribe, completely uncontacted for over 50,000 years. They live a hunter gatherer life style, and had only discovered iron until recently due to a shipwreck.<br><br>
+
+      Most contacts made with this tribe haven't ended well. They're extremely hostile and for a good reason as any physical contact with them would cause them to fall severely ill.<br><br>
+
+      This tribe rose to popularity when an American tourist, John Allen Chou tried to make contact with them, pushing them and not leaving even after being told so. As a result, even after several warnings, John was attacked and succumbed on spot.<br><br>
+
+      The people of this tribe, even though lacking vital resources, are well skilled in archery, defense and attacks.<br><br>
+
+      The reason why the Sentinelese against foreigners is due to various people trying to kidnap and take over their island.<br><br>
+
+      In 1991, an Indian anthropologist, Madhumala Chattopadhyay was able to make 2 friendly contacts with the tribe, getting close with them, she was able to talk and give them coconuts hand to hand. This was something never done before.</p>
+      </div>
+     <figure class="swing">
+       <img src="https://i0.wp.com/fellowprimo.com/wp-content/uploads/2020/04/2-5.jpg?fit=1100%2C619&ssl=1" width="96%" height="90%">
+      </figure>
+       <audio controls><source src="prisha.mp3" type="audio/mpeg"></audio>
+      <figure class="swing">
+       <img src="https://edtimes.in/wp-content/uploads/2017/12/Untitled-design-1-2.jpg" width="96%" height="90%">
+      </figure>
+    </section>
+    <!-- 5 section ends-->
+
+    <!-- 6 section start-->
+    <section id="six-section">
+      <div class="c o"> 
+        <h2><u>CURRENT SITUATION</u></h2>
+      <p>From 1996 the regular gift dropping missions stopped. Many officials were beginning to question the wisdom of attempting to contact people who were healthy and content and had thrived on their own for up to 55,000 years. Friendly contact had had only a devastating impact on the Great Andamanese tribes. Sustained contact with the Sentinelese would almost certainly have tragic consequences
+     <br><br>
+      In the following years only occasional visits were made, again with a mixed response. After the Tsunami in 2004, officials made two visits to check, from a distance, that the tribe seemed healthy and were not suffering in any way. They then declared that no further attempts would be made to contact the Sentinelese.
+<br><br>
+      Periodic checks, from boats anchored at a safe distance from shore, are made to ensure that the Sentinelese appear well and have not chosen to seek contact.
+<br><br>
+      The uncontacted Sentinelese, as the most isolated tribe in the world, are extremely vulnerable to diseases from outsiders, but during a global pandemic the risk of devastating infection is even greater. Without proper patrolling of the waters around their island they are at risk of coming into contact with poachers illegally fishing and diving for lobster.</p>
+      </div>
+      <figure class="swing">
+       <img src="https://opt.toiimg.com/recuperator/img/toi/m-71142260/71142260.jpg?resizemode=1&width=90&height=66" width="96%" height="90%">
+      </figure>
+       <audio controls><source src="sakthi.mp3" type="audio/mpeg"></audio>
+      <figure class="swing">
+       <img src="https://static.toiimg.com/thumb/66755695/Main.jpg?width=1200&height=900" width="96%" height="90%">
+      </figure>
+    </section>
+    <!-- 6 section ends-->
+
+    <!-- 7 section start-->
+    
+
+  </body>
+</html>
