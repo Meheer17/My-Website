@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
   res.sendFile(process.cwd() + '/views/index.html');
 });
 
+app.get('/projects', (req, res) => {
+  res.sendFile(process.cwd() + '/views/projects.html');
+});
+
 app.listen(3000, () => {
   console.log('server started');
 });

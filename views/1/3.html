@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin:0; padding:0;}
+nav{ width:100%; padding:11px; top:0px; flex-direction:column; float:center; position:fixed; background-color:white;}
+ul{float:right;}
+li{list-style:none; display:inline;  font-size:20px; }
+li a{margin-top:15px; text-decoration:none; color:black; padding:20px;}
+li a:hover {background-color:#E0E0E0;}
+input[type="email"]{width:100%; border:none; border-bottom:2px solid black; font-size:15px;}
+.container{width:60%; margin-left:auto; margin-right:auto;}
+button{margin-top:5px; width:30%; margin-left:35%; background-color:orange; border:none; padding:5px; cursor:pointer; transition:3s;}
+button:hover{background-color:#D84315;}
+.cont{margin:20%; margin-top:0px; background-color:#D84315;}
+  @media (max-width: 690px) {
+  nav ul{margin-right:20px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    }}
+ @media (max-width: 935px) {
+  nav ul{margin-right:20px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    }}
+@media (max-width: 935px){.container{margin-top:40%;}}
+@media (max-width: 690px){.container{margin-top:75%;}}
+.container1{ border:1px solid black; display:flex;flex-direction:column; align-items:center;width:30%; text-align:center;  margin:10px; border-radius:10px;}
+.container1> .level{background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700; border-radius:10px;
+}
+.container1 > h2 {
+  margin-top: 15px;
+}
+.container1> ol {
+  margin: 15px 0;
+}
+.container1> ol > li {
+  padding: 5px 0;
+}
+.container1> button {
+  border: 1;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+}
+@media (max-width: 690px){#bass, #pricing{width:100%} }
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+</style>
+<body>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<header id="header"><nav id="nav-bar"><img id="header-img"src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="original trombones" style="width:60%; margin-right:0px; height:70px;"><ul><li><a href="#features" class="nav-link">Features</a></li><li><a href="#how it works" class="nav-link">How It Works</a></li> <li><a href="#pricing" class="nav-link">pricing</a></li></ul></nav>
+<div class="container"><p style="margin-Top:20%; font-size:30px; text-align:center;font-size:30px;">Handcrafted, Home-Made Masterpieces</p><br>
+ <form action="https://www.freecodecamp.com/email-submit" id="form" ><input  type="email" id="email" placeholder="Enter Your Email" required></input><input type="submit" id="submit" name="email" style="text-align:center;" action="https://www.freecodecamp.com/email-submit"></input></form></div><section>
+<div class="cont"><p style="float:right; margin-Top:20%; font-size:30px; text-align:left;font-size:30px;}" id="features"><img src="data:image/png;base64,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" style="width:29%;margin-left:0px; float:left;"><strong>Premium Materials:</strong><br>
+Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p></div>
+ <div class="cont"><p style="float:right; margin-Top:20%; font-size:30px; text-align:left;font-size:30px;}"><img src="data:image/png;base64,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" style="width:26%;margin-left:8px;margin-right:18px; float:left;"><strong>Fast Shipping:</strong><br>
+We make sure you recieve your trombone as soon as we have finished making it.</p></div>
+  <div class="cont"><p style="float:right; margin-Top:20%; font-size:40px; text-align:left;font-size:30px;}"><i style="font-size:70px;color:orange; margin-left:18px; margin-right:18px; float:left;" class="fa fa-battery-full"></i>
+<strong>Quality Assurance:</strong><br>
+For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p></div></section>
+  <section id="how it works"><iframe id="video"style="" width="100%" height="345" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen>
+</iframe>
+</section>
+ 
+  <div id="pricing" class="container1 level" style="float:left;">
+   <div class="level">Tenor Trombone</div>
+        <h2>$600</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div></div>
+      <div style="float:center;" class="container1" id="bass">
+        <div class="level">Bass Trombone</div>
+        <h2>$900</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+      </div>
+    
+ <footer style="margin-bottom:0%; height:90px; background-color:#ddd;">
+<ul>
+  <li><a href="#">Privacy</a></li>
+  <li><a href="#">terms</a></li> 
+  <li><a href="#">contact</a></li>
+</ul>
+   <footer style="text-align:right;">Copyright 2016, Original Trombones</footer>
+</footer>
+ 
+</body>
+</html>

@@ -8,6 +8,7 @@ function App() {
 	    <nav class="navbar">
 	    	<ul class="navbar-links">
 		        <li><a href="/">Home</a></li>
+                <li><a href="/projects">Projects</a></li>
 		    </ul>
 	    </nav>
 	    <div class="hamburger">
