@@ -1,0 +1,1342 @@
+<!-- This is the Main HTML file
+ Remeber to copy all the required Links and Tags. -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="">
+    <meta charset="utf-8">
+    <meta name="description" content="A Free Template">
+    <meta name="viewport" content="width=device-width">
+    <title>All Project</title>
+    <link rel="icon" href="../../css/images/MJ.png">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js'></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.3/json3.min.js" integrity="sha512-tbfBlQc+SIzEWNdV6+YHk/zNMEAX3tLlaELHbR8VUfx5DQ+G7aHdrLvvdVSI+P7JbgwsuSxPwJ+L7kBcUUrEfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js'></script>
+    <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.0/marked.min.js" integrity="sha512-+yBiQ6q3TDGoiassGMt28VYghfGBtA74mN2W8oNTCi49BsvmBfOSoMMGRj6TYRV7CF2URkpyS61uJBgC3H/uzA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"type="text/css"/>    
+    <meta name="keywords" content="Meheer007,meheer007,meheer007 bio,repl.it">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <style>
+      :root {
+	--color-background-1: #2369b49c;
+	--color-background-2: #2aae41;
+	--color-background-3: #e3e3e3;
+	--color-foreground-1: #eaeaea;
+	--color-foreground-2: #030303;
+	--color-link: #217730;
+  --color-link-2: #c7c76e;
+	--border-radius-small: 12px;
+	--border-radius-medium: 25px;
+	--border-radius-large: 75px;
+	--spacing-half: 5px;
+	--spacing-1: 10px;
+	--spacing-2: 26px;
+	--spacing-3: 35px;
+	--spacing-4: 42px;
+	--spacing-5: 50px;
+}
+
+*{
+margin:0;
+padding:0;
+user-select: none;
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+overflow-x: hidden;
+ background-image: linear-gradient(62deg, #000000da 0%, #000000da 100%), url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80"%3E%3Cpath fill="%239C92AC" fill-opacity="0.4" d="M14 16H9v-2h5V9.87a4 4 0 1 1 2 0V14h5v2h-5v15.95A10 10 0 0 0 23.66 27l-3.46-2 8.2-2.2-2.9 5a12 12 0 0 1-21 0l-2.89-5 8.2 2.2-3.47 2A10 10 0 0 0 14 31.95V16zm40 40h-5v-2h5v-4.13a4 4 0 1 1 2 0V54h5v2h-5v15.95A10 10 0 0 0 63.66 67l-3.47-2 8.2-2.2-2.88 5a12 12 0 0 1-21.02 0l-2.88-5 8.2 2.2-3.47 2A10 10 0 0 0 54 71.95V56zm-39 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm40-40a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM15 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm40 40a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"%3E%3C/path%3E%3C/svg%3E');
+}
+::-webkit-scrollbar{
+width:10px;
+background-color:black;
+}
+::-webkit-scrollbar-thumb{
+  border-radius:10px;
+  background-color:rgb(219, 125, 17);
+  border:2px solid #92530b;
+}
+::-webkit-scrollbar-track{
+  margin-top:30px;
+  border-radius:20px;
+}
+#welcome{
+  color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  margin: auto;
+	height: 100vh;
+	justify-content: space-evenly;
+}
+#welcome .bg{
+  background:linear-gradient(62deg, #00000096 0%, #000000a8 100%), url('https://images.unsplash.com/photo-1544099858-75feeb57f01b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat;
+  border-bottom-left-radius:60px;
+  border-bottom-right-radius:60px;
+	background-size: cover;
+	background-position:center;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.center{
+text-align:center;
+color:black;
+z-index:1;
+	margin: auto;
+}
+.text{
+  color:white;
+  font-size:60px;
+  text-shadow: 1px 1px 20px #00a9e2;
+}
+
+p{
+  	z-index: 1;
+    color:white;
+    text-shadow: none;
+    font-size:25px;
+}
+footer{
+  	width: 100%;
+    background-color:grey;
+    margin-bottom:0;
+}
+.copyright {
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 40px;
+	text-align: center;
+}
+
+.copyright a{
+	color: #fff;
+	font-size: 1rem;
+	letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.copyright a:hover{
+	color: rgb(74, 74, 117);
+}
+
+#contact{
+	margin: auto;
+	padding-bottom: 20px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+	#ci{
+ color:white;
+  }
+  #ci:hover {
+    text-shadow:10px 10px 5px black;
+  transform:translate3d(10px , 10px ,10px) ;
+  color:#00a9e2;
+  }
+
+#contact p{
+	padding:20px;
+	text-align:center;
+	font-size:1.5rem;
+}
+hr {
+    background:#00a9e2;
+	margin: 2px;
+	height: 3px;
+  margin-bottom: 10px;
+	width: 150px;
+    border-radius:5px;
+	border: hidden;
+	margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+.c{
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: rgb(20, 22, 114);
+}
+header{
+height:70px;
+width:100%;
+display:flex;
+position: fixed;
+align-items:center;
+justify-content:space-evenly;
+background:transparent;
+z-index: 5; 
+transition:0.3s;
+}
+header:hover{
+opacity:1;
+background: #21252e;
+}
+.nav-show{
+  opacity: 0;
+}
+.nav-bar{
+	list-style:none;
+	position: relative;
+	display: inline-flex;
+}
+a.nav-link{
+        margin:2px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+
+
+}
+.nav-link:hover {
+	color: #000000;
+        background:#00a9e2;
+}
+.logo img{
+	padding-top: 5px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger div{
+	width: 30px;
+	height: 3px;
+	background: #dbdbdb;
+	margin: 5px;
+	transition:all 0.3s ease;
+}
+
+.toggle .line1{
+	transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+	opacity: 0;
+}
+
+.toggle .line3{
+	transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity:0;
+		transform: translatex(50px);
+	}
+	to{
+		opacity: 1;
+		transform:translatex(0px);
+	}
+}
+@media only screen and (max-width: 500px) {
+  .logo{
+		position:absolute;
+		top: 2px;
+		left: 30px;
+	}
+	.nav-show{
+		opacity: 1;
+	}	 
+	.nav-bar{
+		position:fixed;
+		top: 0px;
+		right:0;
+		width:60%;
+		height: 100vh;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+    background:#21252e;
+		justify-content:space-evenly;
+		transform:translatex(100%);
+		transition: transform 0.5s ease-in;
+		z-index: -1;
+	}
+	.hamburger{
+		position:absolute;
+		top: 17px;
+		right: 25%;
+		display: block;
+		cursor:pointer;
+		z-index: 5;
+	}	
+	.nav-bar li{
+		opacity:0;
+	}
+}
+.nav-active{
+	transform:translatex(0%);
+}
+.active{
+	background: #00a9e2;
+}
+
+main div:nth-child(odd) {
+	color: var(--color-foreground-2);
+	width: 66%;
+        text-align:center;
+	border: 3px solid var(--color-background-2);
+	border-left: none;
+        background-color:rgb(0, 151, 252);
+	border-top-right-radius: var(--border-radius-large);
+	border-bottom-right-radius: var(--border-radius-large);
+	padding: calc(var(--border-radius-large) / 2);
+	margin-top: var(--spacing-3);
+	margin-bottom: var(--spacing-3);
+	opacity: 0.3;
+	margin-left: -66%;
+	transition: margin-left 1s ease, opacity 2s ease;
+}
+
+main div:nth-child(even) {
+	text-align:center;
+	color: var(--color-foreground-2);
+	width: 66%;
+  background-color: rgb(0, 151, 252);
+	border: 3px solid var(--color-background-2);
+	border-right: none;
+	border-top-left-radius: var(--border-radius-large);
+	border-bottom-left-radius: var(--border-radius-large);
+	padding: calc(var(--border-radius-large) / 2);
+	opacity: 0.3;
+	margin-left: 134%;
+	margin-top: var(--spacing-3);
+	margin-bottom: var(--spacing-3);
+	transition: margin-left 1s ease, opacity 2s ease;
+}
+
+main div:nth-child(odd).show {
+	opacity: 1;
+	margin-left: 0;
+}
+
+main div:nth-child(even).show {
+	opacity: 1;
+	margin-left: 34%;
+}
+
+@media only screen and (max-width: 480px) {
+  html{overflow-x: hidden;}
+	img {height: auto; width: 100% !important; margin: 17px; margin-top: 20px !important; margin-bottom: 20px !important;}
+	h1 {font-size: calc(24px + 2vw);}
+	a {white-space: normal;}
+	header {padding: 10px;}
+	footer {padding: 20px}
+	main > div {
+		padding: var(--spacing-1) !important;
+		width: 90% !important;
+	}
+  .logo{
+    width:100px;
+    height:30px;
+  }
+	main div:nth-child(odd) {margin-left: -90%;}
+	main div:nth-child(even) {margin-left: 190%;}
+	main div:nth-child(even).show {margin-left: 10%;}
+}
+.fl{
+        border: 2px solid black;
+        border-radius:3px;
+        color:black;
+        padding:4px;
+        margin-right:45%;
+}
+
+.fb{
+   display:flex;
+}
+#quote-box{
+  width:60%;
+  z-index:0;
+   margin:auto;
+   margin-top:10px;
+   justify-content:center;
+  align-items:center;
+  border:2px solid black;
+  padding: 30px 40px;
+  background-image: linear-gradient(62deg, #403a3ab4 0%, #191717b1 100%), url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+  border-radius:10px;
+}
+ .quote-text {
+    font-weight:50;
+    z-index:0; 
+    color:white;
+    padding:8px;
+    border:none;
+    box-shadow:inset 4px 4px 10px black;
+    text-align:center;
+    margin-bottom:10px;
+    width:100%;
+    font-size: 1.75em;
+}
+
+#author{
+   color:white;
+   margin-left:65%;
+   font-size: 1em;
+}
+#tweet-quote{
+   background-color:transparent;
+   border:none;
+   height:30px;
+   width:50px;
+   display:block;
+   margin-top:5px;
+   font-size:2em;
+   text-align:center;
+   margin-right:5px;
+   float:left;
+   padding:3px 5px 3px 7px;
+}
+#tumblr-quote {
+   background-color:transparent;
+   border:none;
+   height:30px;
+   width:50px;
+   display:block;
+   font-size:2em;
+   margin-top:5px;
+   text-align:center;
+   float:left;
+   padding:3px 7px 3px 7px;
+}
+ button{
+   background-color:transparent;
+   border:none;
+   color:white;
+   height:30px;
+   margin-top:5px;
+   padding:3px 7px 3px 7px;
+   font-size:1em;
+   text-align:center;
+   float:right;
+   cursor:pointer;
+   display:block; 
+}
+.h{
+   text-align:center; 
+   margin-bottom:10px; 
+   font-size:40px; 
+   text-shadow:3px 3px 3px red;
+}
+
+#editor{  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#2369b49c;
+  width:40%;
+  height:150px;
+  overflow:allow;
+  border:2px solid black;
+  justify-content:center;
+  border-radius:15px;
+  padding:5px;
+}
+#preview img{
+  max-width:100%;
+  max-height:m;
+}
+#preview{
+  margin:auto;
+  width:60%;
+  color:black;
+  padding:25px;
+}
+
+#drum-machine{
+  background-color:#0288D19e;
+  width:60%;
+  border-radius:10px;
+  margin:auto;
+  display:grid;
+  padding:10px;
+  text-align:center;
+  font-size:20px;
+  border:3px solid black;
+  grid-template-areas:
+    'head head head head head'
+    'key1 key2 key3 dispay dispay'
+    'key4 key5 key6 volume volume'
+    'key7 key8 key9 speed speed'
+    'clear pl done done done'
+    ;
+  grid-gap: 10px;
+}
+.clear{grid-area:clear;}
+.pl{grid-area:pl;}
+.head{grid-area:head; padding:7px; text-shadow:2px 2px red;}
+.speed{grid-area:speed;}
+.done{margin:auto; grid-area:done;}
+
+.volume{grid-area:volume;}
+
+#display{
+  grid-area:dispay;
+  background-color:#455A64;
+  border-radius:10px;
+  padding:20px;
+}
+#key1{grid-area: key1;}
+#key2{grid-area: key2;}
+#key3{grid-area: key3;}
+#key4{grid-area: key4;}
+#key5{grid-area: key5;}
+#key6{grid-area: key6;}
+#key7{grid-area: key7;}
+#key8{grid-area: key8;}
+#key9{grid-area: key9;}
+@media(max-width:450px){
+  #drum-machine{
+    width:90%;
+    grid-gap: 10px;
+    margin-top:30px;
+      grid-template-areas:
+    'head head head'
+    'key1 key2 key3'
+    'key4 key5 key6'
+    'key7 key8 key9'
+    'dispay dispay dispay'
+    'volume volume volume'
+    'done done done'    
+    ;
+  }
+  #display{
+    margin-top:9px;
+  }
+}
+@media(max-width:450px){
+  #drum-machine{
+    width:90%;
+    grid-gap: 10px;
+    margin-top:30px;
+      grid-template-areas:
+    'head head head'
+    'key1 key2 key3'
+    'key4 key5 key6'
+    'key7 key8 key9'
+    'dispay dispay dispay'
+    'volume volume volume'
+    'speed speed speed'    
+    'clear pl .'
+    'done done done'  
+        
+        ;}
+     .drum-pad{
+width:30px;
+       margin:auto
+  }
+  .speed{height:55px;}
+  .volume{height:55px;}
+}
+
+  @media(max-width:320px){
+  #drum-machine{
+    padding:1px;
+    margin:3px;
+    width:90%;
+    grid-gap: 10px;
+    margin-top:30px;
+      grid-template-areas:
+    'head head head'
+    'key1 key2 key3'
+    'key4 key5 key6'
+    'key7 key8 key9'
+    'dispay dispay dispay'
+    'volume volume volume'
+    'speed speed speed'    
+    'clear pl .'
+    'done done done'  
+        
+  }
+    .drum-pad{
+padding:10px;
+
+    }
+  }
+
+ .container{
+  width:50%;
+  color:white;
+  margin:auto;
+  background-color:#2121219a;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "dis dis dis dis"
+    "AC C div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal"
+    ;  
+}
+.padButton{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:10px 20px;
+  background-color:grey;
+  border:1px solid black;
+  cursor :pointer;
+  font-size:20px;
+}
+.padButton:hover{
+  border:1px solid white;
+  color:black;
+}
+.allclear{grid-area: AC;}
+.clea{grid-area: C;}
+.divide{grid-area:div;}
+.mul{grid-area:times;}
+.sub{grid-area:minus;}
+.added{grid-area:plus;}
+.num1{grid-area:one;}
+.num2{grid-area:two;}
+.num3{grid-area:three;}
+.num4{grid-area:four;}
+.num5{grid-area:five;}
+.num6{grid-area:six;}
+.num7{grid-area: seven;}
+.num8{grid-area:eight;}
+.num9{grid-area:nine;}
+.zero{grid-area:zero;}
+.equal{grid-area:equal; background-color:#1565C0;}
+.dot{grid-area:dot;}
+.dis{
+  grid-area:dis; 
+  text-align:right;
+  background:black;
+  font-size:20px;
+}
+.dg{background-color:#424242;}
+.red{background-color:#D32F2F;}
+
+.dis input{
+ width:100%;
+  text-align:right;
+  color:white;
+  background-color:transparent;
+  border:none;
+  font-size:20px;
+ }
+
+.boxes{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  width:100%;
+  margin:auto;
+  justify-items:center;
+  align-items:center;
+}
+.time-sets{
+  display:grid;
+  grid-template-columns:1fr 2fr 1fr;
+  justify-items:center;
+  align-items:center;
+}
+.deep-purple{
+        background-color:rgb(119, 31, 119);
+        border-radius: 5px;     
+        align-content: center;
+        display:flex;
+        justify-content: center; 
+}
+.hg{
+        margin-right:45%;
+}
+hu{
+        margin:2px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+}
+.sl{
+     display :none;
+        float:left;
+     background-color:rgb(25, 108, 185);
+     text-align:left;
+     border:2px solid black;
+     border-bottom:0;
+     margin-top:2px;
+     position:fixed;
+}
+.sl a {
+        display:block;
+        text-decoration: none;
+        color:white;
+        font-size:18px;
+        border-bottom:1px solid black;
+        padding:7px;
+        cursor: pointer;
+}
+.sl a:hover{
+        background-color:rgb(0, 132, 255);
+}
+.ml:hover .sl{
+        display:block;
+}
+
+  </style>
+
+  <body>
+    <header>
+      	<a class="logo" href="#home">
+        <img src="https://newsletter-images--timmy-i-chen.repl.co/logo-light.png" alt="repl logo"/></a>
+		
+<nav>
+ <ul class="nav-bar">
+  <div class="bg"></div>
+  <li><a class="nav-link" href="#welcome">Home</a></li>
+
+ <div class="ml">
+  <li>
+ <a class="nav-link">Projects</a>
+  </li>
+  <div class="sl">
+    <a href="#f1">Quote Machine</a>
+    <a href="#f2">Markdown</a>
+    <a href="#f3">Drums</a>
+    <a href="#f4">Calculator</a>
+    <a href="#f5">Pomodoro Clock</a>
+    <a href="#f6">Location</a>
+  </div>
+ </div>
+  <li><a class="nav-link " href="#contact">Contact</a></li>
+ </ul>
+        <div class="hamburger">
+	        <div class="line1"></div>
+                <div class="line2"></div>
+	        <div class="line3"></div>
+        </div>
+ </nav>
+ </header>
+
+    <div id="welcome">
+
+    <div class="bg" ></div>
+    <div class="text center">
+ <h3>HELLO<hr></h3>
+   
+      <p>Im Meheer.<br>Ive made a few projects and would like to show it.<br>Hope you guys would like it.</p>
+      </div>
+    </div>
+
+<main id="projects">
+
+<div id="f1"> 
+  <span id="first"></span>
+</div>
+<div id="f2"> 
+  <h3>Markdown Previewer</h3>      
+  <span id="second"></span>
+</div>
+<div id="f3">
+  <span id="third"></span>
+</div>
+<div id="f4">
+  <h3>Calculator</h3>      
+  <span id="fourth"></span>
+</div>
+<div id="f5">
+  <h3>Pomodoro Clock</h3>      
+  <span id="fifth"></span>
+</div>
+<div id="f6">
+  <h3>Find Your location?</h3>      
+  <span id="data"></span>
+  <r onclick="loco()" class="fl">Find Location</r>
+</div>
+
+
+</main>
+
+<section  id="contact" class="text center c">
+    <div>
+            
+       <h3 >Contact.<hr></h3>
+	<p>Feel free to contact me on my social media.</p>
+	<div class="social-media">
+		<a href="https://codepen.io/zeus17" target="_blank"><i id="ci" class='fab fa-codepen'></i></a>
+		<a href="https://www.freecodecamp.org/zeus007" target="_blank"><i id="ci" class='fab fa-free-code-camp'></i></a>
+		<a href="https://github.com/Meheer17" target="_blank"><i id="ci" class='fab fa-github'></i></a>
+		<a href="https://www.instagram.com/meheer_007/?hl=en" target="_blank"><i id="ci" class='fab fa-instagram'></i></a>
+                <a href="tel:+918310697451"><i id="ci" class='fas fa-mobile-alt'></i></a>
+	</div>
+</section>
+
+
+
+<footer class="copyright">© 2021 
+	<a href="https://my-website.meheer007.repl.co/" target="_blank"> Meheer</a> and if you want the source codes please take it from <a href="https://github.com/Meheer17/Projects.git">GitHub</a>.
+</footer>
+    <script src="script.js">
+        // This is the main js for the normal functioning of the website
+
+
+$(window).on('scroll', function(){
+if($(window).scrollTop()){
+  $('header').addClass('nav-show');
+} else {
+  $('header').removeClass('nav-show');
+}
+})
+
+const navSlide = () => {
+	 const hamburger = document.querySelector(".hamburger");
+	 const navbar = document.querySelector(".nav-bar");
+	 const navLinks = document.querySelectorAll(".nav-bar li");
+
+     hamburger.onclick = () => {
+		
+	 navbar.classList.toggle("nav-active");
+		 
+      //Animation links
+	 navLinks.forEach((link, index) => {
+		if (link.style.animation) {
+			link.style.animation = "";
+		} else {
+			link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+ 1}s`;
+		   }
+		});
+	  //hamburger animation
+	 hamburger.classList.toggle("toggle");
+    }
+	 
+	}
+
+window.onload = () => navSlide();
+
+const body = document.querySelectorAll("body")[0];
+const blocks = document.querySelectorAll("main div");
+
+body.onscroll = function(){
+	blocks.forEach( block => {
+		if (document.documentElement.scrollTop >= block.offsetTop - 0.66 * window.screen.height && document.documentElement.scrollTop !== 0) {
+			block.className = "show";
+		} else {
+			block.className = "";
+		}
+	});
+}
+    </script> 
+    <script type="text/babel">
+        // This is the JavaScript for the Random Quote Machine
+
+
+const API = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
+
+class App extends React.Component {
+   state = {
+      quotes: [],
+      index: 0
+   }
+
+   
+componentDidMount(){
+   fetch(API).then(res => res.json())
+   .then(res => { 
+      this.setState({
+         quotes: res.quotes
+      }, this.getRandomIndex);
+   });
+  
+}
+   
+   getRandomIndex = () => {
+      const {quotes} = this.state
+   if(quotes.length > 0) {
+const index =Math.floor(Math.random()* quotes.length);
+      this.setState({
+         index
+      });
+   }
+      }
+   
+   
+   render(){
+      const {quotes, index} = this.state;
+      const quote = quotes[index];
+      return (
+         <r className="fb">
+<r id="quote-box">
+   <h3 className="h"> Random Quote Machine</h3>
+   
+   {
+      quote && (
+      <r>
+         <section className="quote-text" id="text"><i className="fa fa-quote-left" style={{marginRight:"0.4em"}}></i>{quote.quote}</section> 
+            <cite id="author">- {quote.author}</cite>
+      </r>
+      )
+   }
+   
+   
+   <button id="new-quote" onClick = {this.getRandomIndex}>New Quote</button>
+   </r>
+ </r>           
+      );
+   }
+}
+
+
+
+ReactDOM.render(<App />, document.getElementById('first'))
+
+    </script>	      
+    <script type="text/babel">
+
+const initialState = `# Welcome to my React Markdown Previewer!
+
+## This is a sub-heading...
+### And here's some other cool stuff:
+
+Heres some code, \`\`, between 2 backticks.
+
+\`\`\`
+// this is multi-line code:
+
+function anotherExample(firstLine, lastLine) {
+  if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
+    return multiLineCode;
+  }
+}
+\`\`\`
+
+You can also make text **bold**... whoa!
+Or _italic_.
+Or... wait for it... **_both!_**
+And feel free to go crazy ~~crossing stuff out~~.
+
+There's also [links](https://www.freecodecamp.org), and
+> Block Quotes!
+
+And if you want to get really crazy, even tables:
+
+Wild Header | Crazy Header | Another Header?
+------------ | ------------- | -------------
+Your content can | be here, and it | can be here....
+And here. | Okay. | I think we get it.
+
+- And of course there are lists.
+  - Some are bulleted.
+     - With different indentation levels.
+        - That look like this.
+
+
+1. And there are numbered lists too.
+1. Use just 1s if you want!
+1. And last but not least, let's not forget embedded images:
+
+![freeCodeCamp Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
+`;
+class App extends React.Component {
+  state = {
+    text: initialState
+  }
+handleChange= (e) =>{
+this.setState({
+  text: e.target.value
+})
+}
+  render(){
+    const{ text } = this.state;
+    const markdown = marked(text, {breaks: true})
+		try{
+    return(
+    <r style={{backgroundColor: '#2369b49c'}}>
+      <h1 className="center" color="black">Convert To Markdown</h1>
+       <r className="c">
+         <h3 className="center">Write Your Markdown:</h3>
+         <textarea id="editor" value={text} onChange={this.handleChange}/>
+         </r>
+        <h3 className="center" >See Your Result:</h3>
+        <r style={{textAlign:'left', color:'black'}} dangerouslySetInnerHTML={{__html:markdown}} id="preview" ></r>
+      </r>
+    );
+		}catch(err){console.log(err)}
+  }
+}
+
+ReactDOM.render(<App/>, document.getElementById('second'));
+
+    </script>
+    <script type="text/babel">
+
+const audioClips=[{
+    keyCode: 81,
+    keyTrigger: 'Q',
+    id: 'key1',
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3'
+  },
+  {
+    keyCode: 87,
+    keyTrigger: 'W',
+    id: 'key2',
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/Chord_2.mp3'
+  },
+  {
+    keyCode: 69,
+    keyTrigger: 'E',
+    id: 'key3',
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/Chord_3.mp3'
+  },
+  {
+    keyCode: 65,
+    keyTrigger: 'A',
+    id: 'key4',
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/Give_us_a_light.mp3'
+  },
+  {
+    keyCode: 83,
+    keyTrigger: 'S',
+    id: 'key5',
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3'
+  },
+  {
+    keyCode: 68,
+    keyTrigger: 'D',
+    id: 'key6',
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/Bld_H1.mp3'
+  },
+  {
+    keyCode: 90,
+    keyTrigger: 'Z',
+    id: 'key7',
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/punchy_kick_1.mp3'
+  },
+  {
+    keyCode: 88,
+    keyTrigger: 'X',
+    id: 'key8',
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/side_stick_1.mp3'
+  },
+  {
+    keyCode: 67,
+    keyTrigger: 'C',
+    id: 'key9',
+    url: 'https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3'
+  }];
+
+function App() {
+  const [speed , setSpeed] = React.useState(0.5);
+  const [volume, setVolume] = React.useState(1);
+  const [recording, setRecording] = React.useState("");
+  
+  const playRecording = () =>{
+    let index = 0;
+    let recordArray = recording.split(" ");
+    const interval = setInterval(()=>{
+     const audioTag= document.getElementById(recordArray[index]);
+    audioTag.volume = volume;
+    audioTag.currentTime = 0;
+    audioTag.play(); 
+      index++;
+    },speed * 600);    
+    setTimeout(
+    () => clearInterval(interval),
+      600 * speed * recordArray.length - 1 
+    )
+  };
+   
+    return(
+   <r id="drum-machine">
+<h2 className="text-center head">DRUM MACHINE</h2>
+   {audioClips.map(clip =>(
+        <Pad key={clip.id} clip={clip} volume={volume} setRecording={setRecording}/>
+        ))}
+        <r id="display">{recording}</r>
+        <h4 className="volume">Volume</h4>
+        <input 
+          type="range"
+          className="w-100 volume"
+          step="0.01" 
+          onChange={(e)=> setVolume(e.target.value)}
+          max="1" 
+          min="0" 
+          value={volume}/>
+        <h4 className="speed">Speed</h4>
+        <input 
+          type="range"
+          className="w-100 speed"
+          step="0.01" 
+          onChange={(e)=> setSpeed(e.target.value)}
+          max="1.3" 
+          min="0.1" 
+          value={speed}
+          />
+      <button onClick={playRecording} className="btn btn-success pl">Play</button>
+            <button onClick={() => setRecording("")} className="btn btn-danger clear">Clear</button>
+</r>
+
+    );
+  }
+
+function Pad({clip, volume, setRecording}){
+  const [active, setActive] = React.useState(false);
+  
+  React.useEffect(() =>{
+    document.addEventListener('keydown', handleKeyPress);
+    return()=>{
+      document.removeEventListener('keydown', handleKeyPress);
+    }
+  }, [])
+  
+  const handleKeyPress =(e)=>{
+if(e.keyCode == clip.keyCode){
+playSound();
+}};
+  
+  const playSound = () =>{
+    const audioTag= document.getElementById(clip.keyTrigger);
+    setActive(true);
+    audioTag.volume = volume;
+    setTimeout(()=>setActive(false), 200)
+    audioTag.currentTime = 0;
+    audioTag.play();
+    setRecording(prev => prev +clip.keyTrigger+ " ");
+  }
+   return(
+    <button onClick={playSound} className={`btn btn-secondary p-4 n-3 drum-pad ${active && 'btn-warning'} `}>
+  <audio className="clip" id={clip.keyTrigger} src={clip.url}/>
+    {clip.keyTrigger}
+  </button>
+      );
+}
+  
+ 
+  
+ReactDOM.render(<App/>, document.getElementById('third'));
+
+    </script>
+    <script type="text/babel">
+        function App(){
+  const [exp ,setExp] = React.useState();
+  const [answer, setAnswer] = React.useState(0);
+
+  const display = (symbol) => {
+    setExp(prev => prev + symbol)
+  };
+  
+  const calc = () =>{
+    setAnswer(eval(exp))
+  };
+const allClear =()=>{
+  setExp("")
+  setAnswer("0")
+};  
+const clear =()=>{
+ setExp(prev => prev.split("").slice(0, prev.length - 1).join(""))
+setAnswer("0")
+};  
+
+  return (
+<r className="container">
+  <r className="grid">
+    <r id="display" className="dis">
+      <input type="text" value={exp} placeholder="0" disabled />
+      <span>{answer}</span>
+    </r>
+    <r onClick={allClear} id="clear" className="padButton AC red allclear">AC</r>
+    <r onClick={clear} className="padButton clea C red">C</r>
+    <r onClick={() => display("/")} id="divide" className="padButton divide div">/</r>
+    <r onClick={() => display("*")} id="multiply" className="padButton mul times">X</r>
+    <r onClick={() => display("7")} id="seven" className="padButton num7 seven dg">7</r>
+    <r onClick={() => display("8")} id="eight" className="padButton num8 eight dg">8</r>
+    <r onClick={() => display("9")} id="nine" className="padButton num9 nine dg">9</r>
+    <r onClick={() => display("-")} id="subtract" className="padButton sub minus">-</r>
+    <r onClick={() => display("4")} id="four" className="padButton num4 four dg">4</r>
+    <r onClick={() => display("5")} id="five" className="padButton num5 five dg">5</r>
+    <r onClick={() => display("6")} id="six" className="padButton num6 six dg">6</r>
+    <r onClick={() => display("+")} id="add" className="padButton added plus">+</r>
+    <r onClick={() => display("1")} id="one" className="padButton num1 one dg">1</r>
+    <r onClick={() => display("2")} id="two" className="padButton two num2 dg">2</r>
+    <r onClick={() => display("3")} id="three" className="padButton three num3 dg">3</r>
+    <r onClick={calc} id="equals" className="padButton equal">=</r>
+    <r onClick={() => display("0")} id="zero" className="padButton zero dg">0</r>
+    <r onClick={() => display(".")} id="decimal" className="padButton dot dg">.</r>  
+  </r>
+</r>
+ );
+}
+
+ReactDOM.render(<App />, document.getElementById("fourth"));
+
+    </script>
+    <script type="text/babel">
+        function App(){
+
+  const [onBreak, setOnBreak] = React.useState(false);
+  const [timerOn, setTimerOn] = React.useState(false);
+  const [sessionTime, setSessionTime] = React.useState(25*60);
+  const [breakTime, setBreakTime] = React.useState(5*60);
+  const [displayTime,setDisplayTime] = React.useState(25*60);
+  const [breakAudio, setBreakAudio] = React.useState(new Audio());
+  
+  const formatTime = (time) => {
+    let minutes = Math.floor(time/60);
+    let seconds = time % 60;
+    return(
+      (minutes < 10 ? "0" + minutes : minutes) + ":" +
+      (seconds < 10 ? "0" + seconds :seconds)
+    );    
+  };
+    
+  const changeTime = (amount, type) => {
+    if(type == 'break'){
+      if(breakTime<= 60 && amount < 0){
+        return;
+      }
+      setBreakTime(prev => prev + amount) ;
+    } else { 
+      if(sessionTime<= 60 && amount < 0){
+        return;
+      }
+    setSessionTime(prev => prev + amount);
+      if(!timerOn){
+          setDisplayTime(sessionTime + amount) 
+      }
+    } 
+  };
+  
+  const playBreak = () => {
+    breakAudio.currentTime = 0;
+    breakAudio.play();
+  };
+  
+  const controlTime = () => {
+    let second = 1000;
+    let date = new Date().getTime();
+    let nextDate = new Date().getTime() + second;
+    let onBreakVar = onBreak;
+     if(!timerOn){
+     let interval = setInterval(() =>{
+       date = new Date().getTime();
+       if(date > nextDate){
+         setDisplayTime((prev) => {
+         if(prev <= 0 && !onBreakVar){
+           playBreakSound();
+           onBreakVar = true;
+           setOnBreak(true)
+           return breakTime;
+         }else if(prev <=0 && onBreakVar){
+           playBreakSound();
+           onBreakVar = false;
+           setOnBreak(false)
+           return sessionTime;    
+         }
+         return prev - 1;
+         });
+          nextDate += second;
+       }
+     },30);
+     localStorage.clear();
+     localStorage.setItem('interval-id', interval);
+    } 
+    if(timerOn){
+     clearInterval(localStorage.getItem("interval-id"))
+    }
+    setTimerOn(!timerOn);
+  };
+  
+  const resetTime = () => {
+    setDisplayTime(25*60);
+    setBreakTime(5*60);
+    setSessionTime(25*60); 
+  };
+  
+return (
+<r> 
+  <r className="boxes">
+  <Length 
+    title={"Break length"} 
+    changeTime={changeTime} 
+    type={"break"} 
+    time={breakTime} 
+    formatTime={formatTime} 
+    />
+  <Length 
+    title={"Session length"} 
+    changeTime={changeTime} 
+    type={"session"} 
+    time={sessionTime} 
+    formatTime={formatTime} 
+    />
+    </r>
+  <h3>{onBreak ? "break": "session"}</h3>
+  <h1>{formatTime(displayTime)}</h1>
+
+  <button className="deep-purple hg" 
+    onClick={controlTime}>
+    {timerOn ? (
+    <i className="material-icons">pause_circle_filled</i>
+    ): (
+    <i className="material-icons">play_circle_filled</i>
+    )}
+  </button>
+  <button className="deep-purple" onClick={resetTime}>
+    <i className="material-icons">autorenew</i>
+  </button>
+  </r>
+);
+};
+
+function Length({title, changeTime, type, time, formatTime}){
+ return(
+ <r>
+   <h4>{title}</h4>
+     <r className="time-sets">
+       <button id="break-decrement" id="session-decrement" className="deep-purple"
+         onClick={() => changeTime(-60, type)}>
+         <i class="material-icons">arrow_drop_down</i>
+       </button>
+       <h4>{formatTime(time)}</h4>
+       <button id="break-increment" id="session-increment" className="deep-purple"
+         onClick={() => changeTime(60,type)}>
+         <i class="material-icons">arrow_drop_up</i>
+       </button>
+     </r>
+ </r>
+ );  
+}
+
+ReactDOM.render(<App/>, document.getElementById("fifth"));
+
+    </script>
+    <script> //This is the code for the location finder.
+    function loco(){
+      if (navigator.geolocation){
+  navigator.geolocation.getCurrentPosition(function(position) {
+    document.getElementById('data').innerHTML="<h1>latitude: </h1>" + "<h3>" + position.coords.latitude + "</h3>"+ "<br><h1>longitude: </h1>" + "<h3>" + position.coords.longitude + "</h3>";
+  });
+  };
+};
+    </script>
+  </body>
+</html>

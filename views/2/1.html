@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../css/images/MJ.png">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>   
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="navbar.js" type="text/babel"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Random Quote Machine</title>
 </head>
 <style>
     *{
@@ -105,14 +112,14 @@ a{
 </style>
 <body>
 
-<div id="App"></div>
+<div id="root"></div>
 <link
   rel="stylesheet"
   href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
 />
  <p style="text-align:center; color:black; margin-top:20px; font-size:25px;">&copy; created by <a href = "https://replit.com/@Meheer007"><b>Meheer</b></a></p>
 
-<script>
+<script type="text/babel">
     const API = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
 
 class App extends React.Component {
@@ -174,7 +181,7 @@ const index =Math.floor(Math.random()* quotes.length);
 
 
 
-ReactDOM.render(<App />, document.getElementById('App'))
+ReactDOM.render(<App />, document.getElementById('root'))
 </script>
 
 </body>

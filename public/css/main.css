@@ -199,8 +199,8 @@ body{
     background-size: cover;
     color: white;
 }
-#projects{
-    padding: 30px;
+#projects, #abt{
+    padding-top: 80px;
 }
 
 /*Others*/
@@ -251,7 +251,6 @@ body{
     background-color: #00e1ff; 
     margin: 0 15px 0px 15px;
     border-radius: 20px; 
-    margin-top: 80px;
 }
 
 .foot{
@@ -286,7 +285,7 @@ body{
     border-radius: 20px;
     padding: 5px;
     color: #7f8a9a;
-    margin: 5px;
+    margin: 15px;
     width: 30%;
     height: 265px;
     cursor: pointer;
@@ -306,17 +305,17 @@ a{
 }
 
 .content{
-    color: rgb(37, 37, 37);
+    color: rgb(255, 255, 255);
     border-radius: 20px;
     height: 0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.274);
+    background-image: linear-gradient(62deg, #1d1d1def 0%, #1b1b1bee 100%);
     transition: all 1s;
 }
-
+    
 .p-elem:hover img{
     filter: grayscale(100%)
-}
+} 
 
 .p-elem:hover .content{
     display: block;

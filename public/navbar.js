@@ -1,5 +1,5 @@
 function App() {
-  return(
+  return (
     <div id="header">
 	    <div class="circle-logo">
             <img src="css/images/MJ.png" alt=""/>
@@ -16,7 +16,7 @@ function App() {
 			<div class="line2"></div>
 			<div class="line3"></div>
 	    </div>
-    </div>
+</div>
   );
 }
 

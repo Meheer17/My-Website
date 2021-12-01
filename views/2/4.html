@@ -3,121 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../css/images/MJ.png">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>   
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="navbar.js" type="text/babel"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"> 
+    <title>Calculator</title>
 </head>
 <style>
     *{
-  padding:0;
   margin:0;
+  padding:0;
 }
 html{
-  scroll-behavior:smooth;
+  scroll-behaviour:smooth;
 }
 body{
-  background-color:#0288D19e;
-  height:100%;
-  background-image: url('data:image/svg+xml,%3Csvg width="100" height="20" viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z" fill="%239C92AC" fill-opacity="0.4" fill-rule="evenodd"/%3E%3C/svg%3E');
+  background-color:#9E9E9E9a;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="28" height="49" viewBox="0 0 28 49"%3E%3Cg fill-rule="evenodd"%3E%3Cg id="hexagons" fill="%239C92AC" fill-opacity="0.4" fill-rule="nonzero"%3E%3Cpath d="M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
 }
- #drum-machine{
-  background-color:#0288D19e;
-  width:60%;
-  border-radius:10px;
+.container{
+  border:2px solid black;
+  width:50%;
+  color:white;
   margin:auto;
+  margin-top:15vh;
+  background-color:#2121219a;
+}
+.grid{
   display:grid;
-  padding:10px;
-  text-align:center;
-  font-size:20px;
-  margin-top:30vh;
-  border:3px solid black;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    'head head head head head'
-    'key1 key2 key3 dispay dispay'
-    'key4 key5 key6 volume volume'
-    'key7 key8 key9 speed speed'
-    'clear pl done done done'
-    ;
-  grid-gap: 10px;
+    "dis dis dis dis"
+    "AC C div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal"
+    ;  
 }
-.clear{grid-area:clear;}
-.pl{grid-area:pl;}
-.head{grid-area:head; padding:7px; text-shadow:2px 2px red;}
-.speed{grid-area:speed;}
-.done{margin:auto; grid-area:done;}
-
-.volume{grid-area:volume;}
-
-#display{
-  grid-area:dispay;
-  background-color:#455A64;
-  border-radius:10px;
-  padding:20px;
+.padButton{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px 40px;
+  background-color:grey;
+  border:1px solid black;
+  cursor :pointer;
+  font-size:20px;
 }
-a {
-  text-decoration:none;
+.padButton:hover{
+  border:1px solid white;
   color:black;
-  font-size:25px;
+}
+.zero{grid-area:zero;}
+.equal{grid-area:equal; background-color:#1565C0;}
+.dot{grid-area:dot;}
+.dis{
+  grid-area:dis; 
+  text-align:right;
+  background:black;
+  font-size:20px;
 }
 
-@media(max-width:450px){
-  #drum-machine{
-    width:90%;
-    grid-gap: 10px;
-    margin-top:30px;
-      grid-template-areas:
-    'head head head'
-    'key1 key2 key3'
-    'key4 key5 key6'
-    'key7 key8 key9'
-    'dispay dispay dispay'
-    'volume volume volume'
-    'done done done'    
-    ;
-  }
-  #display{
-    margin-top:9px;
-  }
-}
-@media(max-width:450px){
-  #drum-machine{
-    width:90%;
-    grid-gap: 10px;
-    margin-top:30px;
-      grid-template-areas:
-    'head head head'
-    'key1 key2 key3'
-    'key4 key5 key6'
-    'key7 key8 key9'
-    'dispay dispay dispay'
-    'volume volume volume'
-    'speed speed speed'    
-    'clear pl .'
-    'done done done'  
-        
-        ;}
-     .drum-pad{
-width:30px;
-       margin:auto
-  }
-  .speed{height:55px;}
-  .volume{height:55px;}
-}
+.dg{background-color:#424242;}
+.red{background-color:#D32F2F;}
 
-  @media(max-width:320px){
-  #drum-machine{
-    padding:1px;
-    margin:3px;
-  }
-    .drum-pad{
-padding:10px;
+.dis input{
+ width:100%;
+  text-align:right;
+  color:white;
+  background-color:transparent;
+  border:none;
+  font-size:20px;
+ }
 
-    }
-  }
 </style>
 <body>
-    <div id="root"></div> 
-
-    <script>
-        function App(){
+   <div id="root"></div> 
+<script type="text/babel">
+    function App(){
   const [exp ,setExp] = React.useState(0);
   const [answer, setAnswer] = React.useState(0)
   
@@ -167,7 +136,7 @@ setAnswer("0")
  );
 } 
 
-ReactDOM.render(<App />, document.getElementById("root"));    
-    </script> 
+ReactDOM.render(<App />, document.getElementById("root"));
+</script> 
 </body>
 </html>
