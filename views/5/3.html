@@ -9,8 +9,7 @@
     <meta charset="utf-8">
     <meta name="description" content="A Free Template">
     <meta name="viewport" content="width=device-width">
-    <title>All Project</title>
-    <link rel="icon" href="../../css/images/MJ.png">
+    <title>Template</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js'></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.3/json3.min.js" integrity="sha512-tbfBlQc+SIzEWNdV6+YHk/zNMEAX3tLlaELHbR8VUfx5DQ+G7aHdrLvvdVSI+P7JbgwsuSxPwJ+L7kBcUUrEfA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -23,9 +22,10 @@
     <meta name="keywords" content="Meheer007,meheer007,meheer007 bio,repl.it">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <style>
-      :root {
+<style>
+    :root {
 	--color-background-1: #2369b49c;
 	--color-background-2: #2aae41;
 	--color-background-3: #e3e3e3;
@@ -702,9 +702,7 @@ hu{
 .ml:hover .sl{
         display:block;
 }
-
-  </style>
-
+</style>
   <body>
     <header>
       	<a class="logo" href="#home">
@@ -794,13 +792,10 @@ hu{
 
 
 <footer class="copyright">© 2021 
-	<a href="https://my-website.meheer007.repl.co/" target="_blank"> Meheer</a> and if you want the source codes please take it from <a href="https://github.com/Meheer17/Projects.git">GitHub</a>.
+	<a href="https://replit.com/@Meheer007" target="_blank"> Meheer</a> and if you want the source codes please take it from <a href="https://github.com/Meheer17/Projects.git">GitHub</a>.
 </footer>
-    <script src="script.js">
-        // This is the main js for the normal functioning of the website
-
-
-$(window).on('scroll', function(){
+    <script>
+        $(window).on('scroll', function(){
 if($(window).scrollTop()){
   $('header').addClass('nav-show');
 } else {
@@ -845,74 +840,11 @@ body.onscroll = function(){
 		}
 	});
 }
+
+
     </script> 
     <script type="text/babel">
-        // This is the JavaScript for the Random Quote Machine
-
-
-const API = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
-
-class App extends React.Component {
-   state = {
-      quotes: [],
-      index: 0
-   }
-
-   
-componentDidMount(){
-   fetch(API).then(res => res.json())
-   .then(res => { 
-      this.setState({
-         quotes: res.quotes
-      }, this.getRandomIndex);
-   });
-  
-}
-   
-   getRandomIndex = () => {
-      const {quotes} = this.state
-   if(quotes.length > 0) {
-const index =Math.floor(Math.random()* quotes.length);
-      this.setState({
-         index
-      });
-   }
-      }
-   
-   
-   render(){
-      const {quotes, index} = this.state;
-      const quote = quotes[index];
-      return (
-         <r className="fb">
-<r id="quote-box">
-   <h3 className="h"> Random Quote Machine</h3>
-   
-   {
-      quote && (
-      <r>
-         <section className="quote-text" id="text"><i className="fa fa-quote-left" style={{marginRight:"0.4em"}}></i>{quote.quote}</section> 
-            <cite id="author">- {quote.author}</cite>
-      </r>
-      )
-   }
-   
-   
-   <button id="new-quote" onClick = {this.getRandomIndex}>New Quote</button>
-   </r>
- </r>           
-      );
-   }
-}
-
-
-
-ReactDOM.render(<App />, document.getElementById('first'))
-
-    </script>	      
-    <script type="text/babel">
-
-const initialState = `# Welcome to my React Markdown Previewer!
+        const initialState = `# Welcome to my React Markdown Previewer!
 
 ## This is a sub-heading...
 ### And here's some other cool stuff:
@@ -986,10 +918,10 @@ this.setState({
 
 ReactDOM.render(<App/>, document.getElementById('second'));
 
-    </script>
-    <script type="text/babel">
 
-const audioClips=[{
+    </script>	      
+    <script type="text/babel">
+        const audioClips=[{
     keyCode: 81,
     keyTrigger: 'Q',
     id: 'key1',
@@ -1328,6 +1260,69 @@ function Length({title, changeTime, type, time, formatTime}){
 
 ReactDOM.render(<App/>, document.getElementById("fifth"));
 
+    </script>
+    <script type="text/babel">
+        // This is the JavaScript for the Random Quote Machine
+
+
+const API = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
+
+class App extends React.Component {
+   state = {
+      quotes: [],
+      index: 0
+   }
+
+   
+componentDidMount(){
+   fetch(API).then(res => res.json())
+   .then(res => { 
+      this.setState({
+         quotes: res.quotes
+      }, this.getRandomIndex);
+   });
+  
+}
+   
+   getRandomIndex = () => {
+      const {quotes} = this.state
+   if(quotes.length > 0) {
+const index =Math.floor(Math.random()* quotes.length);
+      this.setState({
+         index
+      });
+   }
+      }
+   
+   
+   render(){
+      const {quotes, index} = this.state;
+      const quote = quotes[index];
+      return (
+         <r className="fb">
+<r id="quote-box">
+   <h3 className="h"> Random Quote Machine</h3>
+   
+   {
+      quote && (
+      <r>
+         <section className="quote-text" id="text"><i className="fa fa-quote-left" style={{marginRight:"0.4em"}}></i>{quote.quote}</section> 
+            <cite id="author">- {quote.author}</cite>
+      </r>
+      )
+   }
+   
+   
+   <button id="new-quote" onClick = {this.getRandomIndex}>New Quote</button>
+   </r>
+ </r>           
+      );
+   }
+}
+
+
+
+ReactDOM.render(<App />, document.getElementById('first'))
     </script>
     <script> //This is the code for the location finder.
     function loco(){

@@ -200,7 +200,7 @@ body{
     color: white;
 }
 #projects, #abt{
-    padding-top: 80px;
+    padding: 80px 20px 0 20px;
 }
 
 /*Others*/
@@ -325,6 +325,13 @@ a{
     transform: translateY(-265px); 
 }
 
+.view{
+    background-color: #00e1ff;
+    padding: 10px;
+    border: solid rgb(24, 54, 189) 2px;
+    border-radius: 20px;
+}
+
 @media only screen and (max-width: 500px) {
     .adsf{a:as;}
     .s-grid{
@@ -370,5 +377,15 @@ a{
     .footItem:hover{
         display : flex;
     }
+    .p-grid{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+    .p-elem{
+        width: 100%;
+        height: 320px;
+    }
+
 }
 

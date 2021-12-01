@@ -7,7 +7,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.sendFile(process.cwd() + '/views/5/Projects/index.html');
+  res.sendFile(process.cwd() + '/views/index.html');
 });
 
 app.get('/projects', (req, res) => {
@@ -91,7 +91,7 @@ app.get('/projects/tribe-web', (req, res) => {
   res.sendFile(process.cwd() + '/views/5/2.html');
 });
 app.get('/projects/all-react', (req, res) => {
-  res.sendFile(process.cwd() + '/views/5/Projects/index.html');
+  res.sendFile(process.cwd() + '/views/5/3.html');
 });
 app.get('/projects/', (req, res) => {
   res.sendFile(process.cwd() + '/views/5/4.html');
