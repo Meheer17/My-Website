@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const dns = require('dns');
 const multer = require('multer')
 const urlparser = require('url')
+const chai = require('chai')
 
 
 const app = express();
@@ -93,23 +94,6 @@ app.get('/projects/excercise-tracker', (req, res) => {
   res.sendFile(process.cwd() + '/views/3/5.html');
 });
 
-//              folder 4
-app.get('/projects/', (req, res) => {
-  res.sendFile(process.cwd() + '/views/4/1.html');
-});
-app.get('/projects/', (req, res) => {
-  res.sendFile(process.cwd() + '/views/4/2.html');
-});
-app.get('/projects/', (req, res) => {
-  res.sendFile(process.cwd() + '/views/4/3.html');
-});
-app.get('/projects/', (req, res) => {
-  res.sendFile(process.cwd() + '/views/4/4.html');
-});
-app.get('/projects/', (req, res) => {
-  res.sendFile(process.cwd() + '/views/4/5.html');
-});
-
 
 //              folder 5
 app.get('/projects/temp-convert', (req, res) => {
@@ -193,7 +177,9 @@ app.post("/api/4/fileanalyse", upload.single('upfile'), (req, res) => {
         })
 })
 
-//          5TAB
+//          5 TAB
+
+
 
 app.listen(function() {
   console.log('server started 3000')
