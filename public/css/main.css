@@ -200,7 +200,7 @@ body{
     color: white;
 }
 #projects, #abt{
-    padding: 80px 20px 0 20px;
+    padding: 80px 15px 0 15px;
 }
 
 /*Others*/
@@ -249,7 +249,7 @@ body{
 .hl1{
     color: rgb(255, 255, 255);
     background-color: #00e1ff; 
-    margin: 0 15px 0px 15px;
+    margin: 0 5px 0px 5px;
     border-radius: 20px; 
 }
 
