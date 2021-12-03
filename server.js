@@ -105,12 +105,6 @@ app.get('/projects/tribe-web', (req, res) => {
 app.get('/projects/all-react', (req, res) => {
   res.sendFile(process.cwd() + '/views/5/3.html');
 });
-app.get('/projects/', (req, res) => {
-  res.sendFile(process.cwd() + '/views/5/4.html');
-});
-app.get('/projects/', (req, res) => {
-  res.sendFile(process.cwd() + '/views/5/5.html');
-});
 
 //              1 TAB
 app.get("/projects/api/1/:input", (req, res) => {
@@ -134,6 +128,8 @@ app.get('/projects/api', (req, res) => {
 app.get("/projects/api/2/whoami", function (req, res) {
   res.json({ipaddress : req.connection.remoteAddress, language: req.headers["accept-language"], software: req.headers["user-agent"]});
 });
+
+
 
 //              3 TAB 
 app.post('/projects/api/3/shorturl', function(req, res) {
