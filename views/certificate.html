@@ -10,7 +10,8 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="navbar.js" type="text/babel"></script>
-    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Certificates</title>
 </head>
@@ -25,18 +26,18 @@
 
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up">
     <h1 class="inline-center hl1">CERTIFICATES</h1>
     <br><br>
     <h1 style="color: white; text-align: center;">Here are my certificates from FreeCodeCamp.org</h1>
     <br><br>
 
 
-    <h3  style="color: white;">My Certificates :- </h3>
+    <h3  style="color: white;" data-aos="fade-right">My Certificates :- </h3>
     <br><br>
-    <div class="p-grid">
+    <div class="p-grid" data-aos="fade-up-left">
 
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-up">
             <img src="css/images/17.jpeg" alt="" /> 
             <div class="content">
                 <h2>Responsive Web Design</h2>
@@ -45,7 +46,7 @@
                 <a class="view" href="https://www.freecodecamp.org/certification/zeus007/responsive-web-design" target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-up">
             <img src="css/images/16.jpeg" alt="" />
             <div class="content">
                 <h2>JavaScript</h2>
@@ -54,7 +55,7 @@
                 <a class="view" href="https://www.freecodecamp.org/certification/zeus007/javascript-algorithms-and-data-structures" target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-up">
             <img src="css/images/15.jpeg" alt="" />
             <div class="content">
                 <h2>Front-End Development Libraries</h2>
@@ -72,7 +73,7 @@
                 <a class="view" href="/projects/profile-1"target="_blank">View</a>
             </div>
         </div> -->
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-up">
             <img src="css/images/14.jpeg" alt="" />
             <div class="content">
                 <h2>Quality assurance</h2>
@@ -92,6 +93,48 @@
     <p class="footItem"><i class="fab fa-discord"></i>  discord - Meheer#2192</p>
     <p class="footItem"><a href="https://github.com/Meheer17" style="text-decoration: none; color: #7f8a9a;" target="_blank"><i class="fab fa-github"></i>  github</a></p>
 </section>
+
+<script>
+    $(window).on('scroll', function(){
+if($(window).scrollTop()){
+  $('#header').addClass('nav-show');
+} else {
+  $('#header').removeClass('nav-show');
+}
+})
+</script> 
+<script>
+    const navSlide = () => {
+        
+	const hamburger = document.querySelector(".hamburger");
+	const navbar = document.querySelector(".navbar");
+	const navLinks = document.querySelectorAll(".navbar-links li");
+
+    hamburger.onclick = () => {
+	navbar.classList.toggle("nav-active");
+      //Animation links
+	navLinks.forEach((link, index) => {
+		if (link.style.animation) {
+			link.style.animation = "";
+		} else {
+			link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+ 1}s`;
+		   }
+		});
+	  //hamburger animation
+	hamburger.classList.toggle("toggle");
+    }
+}
+
+window.onload = () => navSlide();
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+         offset: 120,
+         duration: 1000,
+    });
+</script>
 
 </body>
 </html>

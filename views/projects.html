@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="css/images/MJ.png">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>   
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="navbar.js" type="text/babel"></script>
     <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Projects</title>
 </head>
@@ -26,18 +27,18 @@
 
 </section>
 
-<section id="projects">
+<section id="projects" data-aos="fade-up">
     <h1 class="inline-center hl1">Projects</h1>
     <br><br>
     <h1 style="color: white; text-align: center;">Here are some of my projects which ive done over the years...</h1>
     <br><br>
 
 
-    <h3  style="color: white;">My First Five projects:- </h3>
+    <h3  style="color: white;" data-aos="fade-up">My First Five projects:- </h3>
     <br><br>
-    <div class="p-grid">
+    <div class="p-grid" data-aos="fade-up-left">
 
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-up">
             <img src="css/images/1.jpeg" alt="" />
             <div class="content">
                 <h2>Tribute Page</h2>
@@ -46,7 +47,7 @@
                 <a class="view" href="/projects/tribute-page" target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-up">
             <img src="css/images/2.jpeg" alt="" />
             <div class="content">
                 <h2>Survey Form</h2>
@@ -55,7 +56,7 @@
                 <a class="view" href="/projects/survey-form" target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-up">
             <img src="css/images/3.jpeg" alt="" />
             <div class="content">
                 <h2>Shopping Site</h2>
@@ -64,7 +65,7 @@
                 <a class="view" href="/projects/online-shop" target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-up">
             <img src="css/images/4.jpeg" alt="" />
             <div class="content">
                 <h2>JS Document</h2>
@@ -73,7 +74,7 @@
                 <a class="view" href="/projects/document" target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-up">
             <img src="css/images/5.jpeg" alt="" />
             <div class="content">
                 <h2>Profile</h2>
@@ -86,11 +87,11 @@
     </div>
     <br><br>
 
-    <h3  style="color: white;">React Projects:- </h3>
+    <h3  style="color: white;" data-aos="fade-right">React Projects:- </h3>
     <br><br>
-    <div class="p-grid">
+    <div class="p-grid" data-aos="fade-up-left">
 
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-up">
             <img src="css/images/8.jpeg" alt="" />
             <div class="content">
                 <h2>Random Quote Machine</h2>
@@ -99,7 +100,7 @@
                 <a class="view" href="/projects/random-quote-machine"target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-up">
             <img src="css/images/9.jpeg" alt="" />
             <div class="content">
                 <h2>Markdown Viewer</h2>
@@ -108,16 +109,16 @@
                 <a class="view" href="/projects/markeddown"target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-up">
             <img src="css/images/10.jpeg" alt="" />
             <div class="content">
-                <h2>Drum Machine</h2>
+                <h2>Drum Machine</h2>       
                 <p>This is a react project of a online drum.. Try it out its fun!! This is a really fun thing to play with..</p>
                 <br>
                 <a class="view" href="/projects/drum-machine"target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-up">
             <img src="css/images/11.jpeg" alt="" />
             <div class="content">
                 <h2>Calculator</h2>
@@ -126,7 +127,7 @@
                 <a class="view" href="/projects/calculator"target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-up">
             <img src="css/images/12.jpeg" alt="" />
             <div class="content">
                 <h2>Pomodoro Clock</h2>
@@ -139,11 +140,11 @@
     </div>
     <br><br>
 
-    <h3  style="color: white;">Api Projects:- </h3>
+    <h3  style="color: white;" data-aos="fade-right">Api Projects:- </h3>
     <br><br>
-    <div class="p-grid">
+    <div class="p-grid" data-aos="fade-up-right">
 
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-down">
             <img src="css/images/18.jpeg" alt="" />
             <div class="content">
                 <h2>Timestamp Microservice</h2>
@@ -153,7 +154,7 @@
                 <a class="view" target="_blank" href="https://github.com/Meheer17/TIMESTAMP-MICROSERVICE">Github</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-down">
             <img src="css/images/19.jpeg" alt="" />
             <div class="content">
                 <h2>Head Parser</h2>
@@ -163,7 +164,7 @@
                 <a class="view" target="_blank" href="https://github.com/Meheer17/HEADER-PARSER-MS">Github</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-down">
             <img src="css/images/20.jpeg" alt="" />
             <div class="content">
                 <h2>Url Shortner</h2>
@@ -173,7 +174,7 @@
                 <a class="view" target="_blank" href="https://github.com/Meheer17/URL-SHORTNER">Github</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-down">
             <img src="css/images/21.jpeg" alt="" />
             <div class="content">
                 <h2>File Metadata</h2>
@@ -183,7 +184,7 @@
                 <a class="view" target="_blank" href="https://github.com/Meheer17/File-Metadata-Microservice">Github</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-in-down">
             <img src="css/images/22.jpeg" alt="" />
             <div class="content">
                 <h2>Exercise Tracker</h2>
@@ -197,11 +198,11 @@
     </div>
     <br><br>
 
-    <h3  style="color: white;">Api Projects With Chai:- </h3>
+    <h3  style="color: white;" data-aos="fade-right">Api Projects With Chai:- </h3>
     <br><br>
-    <div class="p-grid">
+    <div class="p-grid" data-aos="fade-up-left">
 
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-down">
             <img src="css/images/28.jpg" alt="" />
             <div class="content">
                 <h2>Metric Converter</h2>
@@ -211,7 +212,7 @@
                 <a class="view" target="_blank" href="https://github.com/Meheer17/METRIC-CONVERTER">Github</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-down">
             <img src="css/images/25.jpeg" alt="" />
             <div class="content">
                 <h2>Library Project</h2>
@@ -221,7 +222,7 @@
                 <a class="view" target="_blank" href="https://github.com/Meheer17/LIBRARY-PROJECT">Github</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-down">
             <img src="css/images/24.jpeg" alt="" />
             <div class="content">
                 <h2>Issue Tracker</h2>
@@ -231,7 +232,7 @@
                 <a class="view" target="_blank" href="https://github.com/Meheer17/ISSUE-TRACKER">Github</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-down">
             <img src="css/images/26.jpeg" alt="" />
             <div class="content">
                 <h2>American British</h2>
@@ -241,7 +242,7 @@
                 <a class="view" target="_blank" href="https://github.com/Meheer17/AMERICAN-BRITISH">Github</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-down">
             <img src="css/images/27.jpeg" alt="" />
             <div class="content">
                 <h2>Sudoku Solver</h2>
@@ -255,11 +256,11 @@
     </div>
     <br><br>
 
-    <h3  style="color: white;">Self Purpose Projects:- </h3>
+    <h3  style="color: white;" data-aos="fade-right">Self Purpose Projects:- </h3>    
     <br><br>
-    <div class="p-grid">
+    <div class="p-grid" data-aos="fade-up-right">
 
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-left">
             <img src="css/images/6.jpeg" alt="" />
             <div class="content">
                 <h2>Temp Converter</h2>
@@ -268,7 +269,7 @@
                 <a class="view" href="/projects/temp-convert"target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-left">
             <img src="css/images/7.jpeg" alt="" />
             <div class="content">
                 <h2>Tribe Web</h2>
@@ -277,7 +278,7 @@
                 <a class="view" href="/projects/tribe-web"target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-left">
             <img src="css/images/13.jpeg" alt="" />
             <div class="content">
                 <h2>All React Projects</h2>
@@ -286,7 +287,7 @@
                 <a class="view" href="/projects/all-react"target="_blank">View</a>
             </div>
         </div>
-        <div class="p-elem">
+        <div class="p-elem" data-aos="zoom-out-left">
             <img src="css/images/23.jpeg" alt="" />
             <div class="content">
                 <h2>E-Waste Management</h2>
@@ -308,8 +309,28 @@
     <p class="footItem"><a style="text-decoration: none; color: #7f8a9a;" href="mailto:meherr17.j@gmail.com"><i class="fab fa-mailchimp"></i>  meherr17.j@gmail.com</a></p>
     <p class="footItem"><a style="text-decoration: none; color: #7f8a9a;" href="tel:+91 8310697451"><i class="fas fa-mobile"></i>  +91-8310697451</a></p>
     <p class="footItem"><i class="fab fa-discord"></i>  discord - Meheer#2192</p>
-    <p class="footItem"><a href="https://github.com/Meheer17" style="text-decoration: none; color: #7f8a9a;" target="_blank"><i class="fab fa-github"></i>  github</a></p>
+    <p class="footItem"><a href="https://github.com/Meheer17" style="text-decoration: none; color: #7f8a9a;" target="
+    _blank"><i class="fab fa-github"></i>  github</a></p>
 </section>
+
+<script>
+    $(window).on('scroll', function(){
+if($(window).scrollTop()){
+  $('#header').addClass('nav-show');
+} else {
+  $('#header').removeClass('nav-show');
+}
+})
+
+</script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+         offset: 120,
+         duration: 1000,
+    });
+  </script>
 
 </body>
 </html>
