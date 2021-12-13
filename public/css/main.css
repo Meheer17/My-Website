@@ -239,7 +239,6 @@ body{
 }
 
 .inline-center{
-    padding-top: 20px;
     text-align: center;
 }
 
@@ -278,7 +277,9 @@ body{
 .hl1{
     color: rgb(255, 255, 255);
     background-color: #00e1ff; 
-    margin: 0 5px 0px 5px;
+    margin: 0 0 0 0;
+    text-align: center;
+    padding: 10px 0 10px 0;
     border-radius: 20px; 
 }
 
@@ -417,4 +418,3 @@ a{
     }
 
 }
-
