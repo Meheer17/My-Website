@@ -4,7 +4,7 @@ function App() {
 	    <div class="circle-logo">
             <img src="css/images/MJ.png" alt=""/>
         </div> 
-             <h3><mono style={{color: "white"}}>MAHI</mono></h3>
+             <h3><mono style={{color: "white"}}>MEHEER</mono></h3>
 	    <nav class="navbar">
 	    	<ul class="navbar-links">
 		        <li><a href="/">Home</a></li>
