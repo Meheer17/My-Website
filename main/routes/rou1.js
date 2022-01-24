@@ -12,4 +12,16 @@ module.exports = function(app) {
       res.sendFile(process.cwd() + '/views/certificate.html');
     });
 
+    app.get('/login', (req, res) => {
+        res.sendFile(process.cwd() + '/views/login.html');
+    });
+
+    app.get('/sign-up', (req,res) => {
+        res.sendFile(process.cwd() + "/views/sign.html");
+    });
+
+    app.get('/comments', (req, res) => {
+        res.sendFile(process.cwd() + "/views/comments.html")    
+    });
+    
 }

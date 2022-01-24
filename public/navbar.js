@@ -10,6 +10,8 @@ function App() {
 		        <li><a href="/">Home</a></li>
                 <li><a href="/projects">Projects</a></li>
                 <li><a href="/certificates">Certificates</a></li>
+                <li><a href="/comments">Comments</a></li>
+                <li><a href="/sign-up">Sign-Up</a></li>
 		    </ul>
 	    </nav>
 	    <div class="hamburger">
