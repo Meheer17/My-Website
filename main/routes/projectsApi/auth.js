@@ -28,7 +28,7 @@ module.exports = function(app) {
       });
     
         app.route('/add-comments').get(ensureAuthenticated, (req,res) => {
-            res.sendFile(process.cwd() + "/views/com.html")
+            res.render("pug/com", {user: req.user.username})
         })
     
       app.route('/logout').get((req, res) => {
@@ -43,11 +43,11 @@ module.exports = function(app) {
             if (err) {
               next(err);
             } else if (user) {
-              res.redirect('/login');
+              res.render('pug/login', {error: "Username already exists"});
             } else {
               adn.insertOne({ username: req.body.username, password: hash }, (err, doc) => {
                 if (err) {
-                  res.redirect('/sign-up');
+                  res.render('pug/sign-up', {error: "There was an error"});
                 } else {
                   next();
                 }

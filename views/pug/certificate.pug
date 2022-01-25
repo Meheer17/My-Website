@@ -1,0 +1,138 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='icon' href='css/images/MJ.png')
+  script(defer='' crossorigin='' src='https://unpkg.com/react@17/umd/react.development.js')
+  script(defer='' crossorigin='' src='https://unpkg.com/react-dom@17/umd/react-dom.development.js')
+  script(defer='' src='https://unpkg.com/@babel/standalone/babel.min.js')
+  link(rel='stylesheet' href='css/main.css' type='text/css')
+  script(defer='' src='navbar.js' type='text/babel')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  link(rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  title Certificates
+#header
+  .circle-logo
+    img(src='css/images/MJ.png' alt='')
+  h3
+    mono.white MEHEER
+  nav.navbar
+    ul.navbar-links
+      li
+        a(href='/') Home
+      li
+        a(href='/projects') Projects
+      li
+        a(href='/certificates') Certificates
+      li
+        a(href='/comments') Comments
+      li
+        a(href='/sign-up') Sign-Up
+  .hamburger
+    .line1
+    .line2
+    .line3
+section#welcome
+  .center(style='position: absolute:')
+    h1.text(style='color: white;') CERTIFICATES
+section#projects(data-aos='fade-up')
+  h1.inline-center.hl1(style='color:black') CERTIFICATES
+  br
+  br
+  h1(style='color: white; text-align: center;') Here are my certificates from FreeCodeCamp.org
+  br
+  br
+  h3(style='color: white;' data-aos='fade-right') My Certificates :- 
+  br
+  br
+  .p-grid(data-aos='fade-up-left')
+    .p-elem(data-aos='zoom-in-up')
+      img(src='css/images/17.jpeg' alt='')
+      .content
+        h2 Responsive Web Design
+        p This certificate is for the completion of HTML and CSS course...
+        br
+        a.view(href='https://www.freecodecamp.org/certification/zeus007/responsive-web-design' target='_blank') View
+    .p-elem(data-aos='zoom-in-up')
+      img(src='css/images/16.jpeg' alt='')
+      .content
+        h2 JavaScript
+        p This is for the completion of JS and Data Structures...
+        br
+        a.view(href='https://www.freecodecamp.org/certification/zeus007/javascript-algorithms-and-data-structures' target='_blank') View
+    .p-elem(data-aos='zoom-in-up')
+      img(src='css/images/15.jpeg' alt='')
+      .content
+        h2 Front-End Development Libraries
+        p This is my certificate for my completion of HTML CSS and JS...
+        br
+        a.view(href='https://www.freecodecamp.org/certification/zeus007/front-end-development-libraries' target='_blank') View
+    //
+      <div class="p-elem">
+      <img src="css/images/5.jpeg" alt="" />
+      <div class="content">
+      <h2>Tribute Page</h2>
+      <p>This was my very first website, This was a website on ABJ Abdul Kalam, One of my inspiration for many things..</p>
+      <br>
+      <a class="view" href="/projects/profile-1"target="_blank">View</a>
+      </div>
+      </div>
+    .p-elem(data-aos='zoom-in-up')
+      img(src='css/images/14.jpeg' alt='')
+      .content
+        h2 Quality assurance
+        p This is my certification for Quality assurance with Chai...
+        br
+        a.view(href='https://www.freecodecamp.org/certification/zeus007/quality-assurance-v7' target='_blank') View
+section.foot
+  p.footItem Meheer &amp;copy 2021
+  p.footItem
+    a(style='text-decoration: none; color: #7f8a9a;' href='mailto:meherr17.j@gmail.com')
+      i.fab.fa-mailchimp
+      |   meherr17.j@gmail.com
+  p.footItem
+    a(style='text-decoration: none; color: #7f8a9a;' href='tel:+91 8310697451')
+      i.fas.fa-mobile
+      |   +91-8310697451
+  p.footItem
+    i.fab.fa-discord
+    |   discord - Meheer#2192
+  p.footItem
+    a(href='https://github.com/Meheer17' style='text-decoration: none; color: #7f8a9a;' target='_blank')
+      i.fab.fa-github
+      |   github
+script.
+  $(window).on('scroll', function(){
+  if($(window).scrollTop()){
+  $('#header').addClass('nav-show');
+  } else {
+  $('#header').removeClass('nav-show');
+  }
+  })
+script.
+  const navSlide = () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navbar = document.querySelector(".navbar");
+  const navLinks = document.querySelectorAll(".navbar-links li");
+  hamburger.onclick = () => {
+  navbar.classList.toggle("nav-active");
+  //Animation links
+  navLinks.forEach((link, index) => {
+  if (link.style.animation) {
+  link.style.animation = "";
+  } else {
+  link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7+ 1}s`;
+  }
+  });
+  //hamburger animation
+  hamburger.classList.toggle("toggle");
+  }
+  }
+  window.onload = () => navSlide();
+script(src='https://unpkg.com/aos@next/dist/aos.js')
+script.
+  AOS.init({
+  offset: 120,
+  duration: 1000,
+  });

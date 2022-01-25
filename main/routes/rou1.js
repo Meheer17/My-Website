@@ -1,27 +1,27 @@
 module.exports = function(app) {
     
     app.get('/', (req, res) => {
-      res.sendFile(process.cwd() + '/views/index.html');
+      res.render('pug/index');
     });
     
     app.get('/projects', (req, res) => {
-      res.sendFile(process.cwd() + '/views/projects.html');
+      res.render('pug/projects');
     });
     
     app.get('/certificates', (req, res) => {
-      res.sendFile(process.cwd() + '/views/certificate.html');
+      res.render('pug/certificate');
     });
 
     app.get('/login', (req, res) => {
-        res.sendFile(process.cwd() + '/views/login.html');
+        res.render('pug/login');
     });
 
     app.get('/sign-up', (req,res) => {
-        res.sendFile(process.cwd() + "/views/sign.html");
+        res.render("pug/sign");
     });
 
     app.get('/comments', (req, res) => {
-        res.sendFile(process.cwd() + "/views/comments.html")    
+        res.render("pug/comments")    
     });
     
 }

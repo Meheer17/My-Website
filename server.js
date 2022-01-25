@@ -12,9 +12,10 @@ const main = require('./main/main.js');
 app.use(cors({optionsSuccessStatus: 200}));
 app.use(bodyParser.urlencoded({extended: false}));
 
-//app.set('view engine', 'pug')
+app.set('view engine', 'pug')
 
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 main(app)

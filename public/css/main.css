@@ -11,7 +11,6 @@ html{
 }
 
 body{
-    /* background-image:linear-gradient(62deg, #242424 0%, #5c5c5cb9 100%); */
     background-color:#16161A;
     font-size: 24px;
     font-weight: bold;
@@ -206,7 +205,8 @@ body{
 /*Sections*/
 #welcome{
     height: 100vh;
-    background-image: linear-gradient(62deg, #1d1d1d9d 0%, #1b1b1b9d 100%) ,url('images/cool.jpg');
+    background-image: linear-gradient(62deg, #1d1d1d9d 0%,
+     #1b1b1b9d 100%) ,url('images/cool.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -339,7 +339,8 @@ a{
     border-radius: 20px;
     height: 0;
     overflow: hidden;
-    background-image: linear-gradient(62deg, #1d1d1def 0%, #1b1b1bee 100%);
+    background-image: linear-gradient(62deg, #1d1d1def 0%,
+     #1b1b1bee 100%);
     transition: all 1s;
 }
     
@@ -392,7 +393,8 @@ a{
     }
 
     #welcome{
-        background-image: linear-gradient(62deg, #1d1d1d9d 0%, #1b1b1b9d 100%) ,url('images/31.jpeg');
+        background-image: linear-gradient(62deg, #1d1d1d9d 0%,
+         #1b1b1b9d 100%) ,url('images/31.jpeg');
     }
 
     .footItem{
@@ -439,14 +441,14 @@ a{
     margin: 10px;
     padding-bottom:10px;
     border-radius: 10px;
-    width:  300px;
+    width:  550px;
     padding: 5px;
 }
 .signup{
     margin: 10px;
     padding-bottom:10px;
     border-radius: 10px;
-    width:  300px;
+    width:  550px;
     padding: 5px;
 }
 
@@ -502,7 +504,7 @@ textarea {
     background-color: black;
     width: 100%;
     padding: 3px;
-
+    height: 150px;
     color: rgb(230, 164, 42);
     font-size: 18px;
     border-radius: 10px;
@@ -536,9 +538,42 @@ h3 {
     align-items: center;
 }
 
+#addcomlink {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 40px;
+    width: 20%;
+    background-color: #00e1ff;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+}
+
 @media only screen and (max-width: 500px) {
-    #box {
-        margin-top: 30vh; 
-        width: 450px;
+    .box {
+        margin-top: 10px; 
+        width: 88%;
     }
+    #addcomlink {
+        width: 35%;
+    }
+    .signin{
+        margin: 10px;
+        padding-bottom:10px;
+        border-radius: 10px;
+        width:  300px;
+        padding: 5px;
+    }
+    .signup{
+        margin: 10px;
+        padding-bottom:10px;
+        border-radius: 10px;
+        width:  300px;
+        padding: 5px;
+    }
+}
+
+.red {
+    color: rgb(201, 0, 0);
 }

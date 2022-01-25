@@ -1,0 +1,95 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='icon' href='css/images/MJ.png')
+  link(rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css')
+  script(defer='' src='navbar.js' type='text/babel')
+  script(defer='' crossorigin='' src='https://unpkg.com/react@17/umd/react.development.js')
+  script(defer='' crossorigin='' src='https://unpkg.com/react-dom@17/umd/react-dom.development.js')
+  script(defer='' src='https://unpkg.com/@babel/standalone/babel.min.js')
+  link(rel='stylesheet' href='css/main.css' type='text/css')
+  script(defer='' src='index.js' type='text/javascript')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  title Home
+#header
+  .circle-logo
+    img(src='css/images/MJ.png' alt='')
+  h3
+    mono.white MEHEER
+  nav.navbar
+    ul.navbar-links
+      li
+        a(href='/') Home
+      li
+        a(href='/projects') Projects
+      li
+        a(href='/certificates') Certificates
+      li
+        a(href='/comments') Comments
+      li
+       a(href='/sign-up') Sign-Up
+  .hamburger
+    .line1
+    .line2
+    .line3
+section#welcome
+  .center(style='position: absolute:')
+    h1.text(style='color: white;') HEYY, I&apos;M MEHEER
+section#abt(data-aos='fade-up')
+  h2.inline-center.hl1(style='color:black') Profile
+  .container
+    .sub(data-aos='slide-up')
+      h2.inline-center(style='color: white') About Me!!
+      h3
+        | Hello! My name is Meheer, I want to become one of the best Full-Stack Developer. I love to put my self into my codes while I listen to music. I currentely am a High School Student. My favorite framework as of now is Node.js and make backend part and a few API. I&apos;m really good at learning on my own which is really important for a web developer. I&apos;ve learnt coding from 
+        a(href='https://www.freecodecamp.org/' target='_blank') FreeCodeCamp.org
+        |  on my own and this was really some long way... But it did really worth the time I spent on this. I love to play basketball and handball, And Call Of Duty mobile is my favorite video game and I love watching anime. Thank you for checking my website out, check my github for many more stuff and also my discord to get in touch with me!!
+    .s-grid(data-aos='fade-up')
+      .sub2(data-aos='slide-right')
+        h2.inline-center(style='color: white') What Have I Learnt? 
+        ul(style='padding-left: 15px;')
+          li HTML
+          li CSS
+          li JAVASCRIPT
+          li NODE.JS
+          li MONGOOSE
+          li MONGODB
+          li GIT
+          li PYTHON
+      .sub2(data-aos='slide-left')
+        h2.inline-center(style='color: white') Teach
+        h3
+          | I would love to teach web development to anyone interested! If you are interested in web development, don&apos;t hesitate to call or email me. I can teach you through google meet, and we can go through anything I have listed on this website. You can find my email and phone number in at the bottom of this page. I am also happy to take a look at any job offers that come my way.
+      .sub2(data-aos='slide-right')
+        h2.inline-center(style='color: white') What I&apos;ve Worked On
+        h3
+          | As a part of all these I had made a few projects for my learning, such as a website for my English project on tribes and also an project on E-Waste Management and a website which is a combination of all my React projects which are presented in the projects section... Be sure to check them out while ur here!!
+      .sub2(data-aos='slide-left')
+        h2.inline-center(style='color: white') Why Am I Presenting This?
+        h3
+          | This is really a very intresting question to answer.... So it all started when I was in 8th grade there were few intresting post on instagram and I found it really amazing / attractive to see, So this was a picture on how to make websites and info how it works and all... I was amazed by it and it seemed to be easy and finally ended up starting this fun jorney towards being a web developer...
+section.foot
+  p.footItem Meheer &amp;copy 2021
+  p.footItem
+    a(style='text-decoration: none; color: #7f8a9a;' href='mailto:meherr17.j@gmail.com')
+      i.fab.fa-mailchimp
+      |   meherr17.j@gmail.com
+  p.footItem
+    a(style='text-decoration: none; color: #7f8a9a;' href='tel:+91 8310697451')
+      i.fas.fa-mobile
+      |   +91-8310697451
+  p.footItem
+    i.fab.fa-discord
+    |   discord - Meheer#2192
+  p.footItem
+    a(href='https://github.com/Meheer17' style='text-decoration: none; color: #7f8a9a;' target='_blank')
+      i.fab.fa-github
+      |   github
+script(src='https://unpkg.com/aos@next/dist/aos.js')
+script.
+  AOS.init({
+  offset: 120,
+  duration: 1000,
+  });

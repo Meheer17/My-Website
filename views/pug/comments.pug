@@ -1,0 +1,70 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='icon' href='css/images/MJ.png')
+  link(rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css')
+  script(defer='' src='navbar.js' type='text/babel')
+  script(defer='' crossorigin='' src='https://unpkg.com/react@17/umd/react.development.js')
+  script(defer='' crossorigin='' src='https://unpkg.com/react-dom@17/umd/react-dom.development.js')
+  script(defer='' src='https://unpkg.com/@babel/standalone/babel.min.js')
+  link(rel='stylesheet' href='css/main.css' type='text/css')
+  script(defer='' src='index.js' type='text/javascript')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  script(defer='' src='client.js' type='text/javascript')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  title Comments
+#header
+  .circle-logo
+    img(src='css/images/MJ.png' alt='')
+  h3
+    mono.white MEHEER
+  nav.navbar
+    ul.navbar-links
+      li
+        a(href='/') Home
+      li
+        a(href='/projects') Projects
+      li
+        a(href='/certificates') Certificates
+      li
+        a(href='/comments') Comments
+      li
+        a(href='/sign-up') Sign-Up
+  .hamburger
+    .line1
+    .line2
+    .line3
+section#welcome
+  .center(style='position: absolute:')
+    h1.text(style='color: white;') Comments
+section(style='padding-top: 80px;' data-aos='fade-up')
+  h2.inline-center.hl1(style='color:black;') You Can View All The Comments On This Page...
+  a(href='/add-comments' style='text-decoration: none; color: black;')
+    #addcomlink(data-aos='flip-up')
+      i#addcomlinks.fas.fa-plus-circle
+        su Add Comment
+  #display
+section.foot
+  p.footItem Meheer &amp;copy 2021
+  p.footItem
+    a(style='text-decoration: none; color: #7f8a9a;' href='mailto:meherr17.j@gmail.com')
+      i.fab.fa-mailchimp
+      |   meherr17.j@gmail.com
+  p.footItem
+    a(style='text-decoration: none; color: #7f8a9a;' href='tel:+91 8310697451')
+      i.fas.fa-mobile
+      |   +91-8310697451
+  p.footItem
+    i.fab.fa-discord
+    |   discord - Meheer#2192
+  p.footItem
+    a(href='https://github.com/Meheer17' style='text-decoration: none; color: #7f8a9a;' target='_blank')
+      i.fab.fa-github
+      |   github
+script(src='https://unpkg.com/aos@next/dist/aos.js')
+script.
+  AOS.init({
+  offset: 120,
+  duration: 1000,
+  });

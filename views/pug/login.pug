@@ -1,0 +1,54 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='icon' href='css/images/MJ.png')
+  link(rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css')
+  script(defer='' crossorigin='' src='https://unpkg.com/react@17/umd/react.development.js')
+  script(defer='' crossorigin='' src='https://unpkg.com/react-dom@17/umd/react-dom.development.js')
+  script(defer='' src='https://unpkg.com/@babel/standalone/babel.min.js')
+  script(defer='' src='navbar.js' type='text/babel')
+  script(src='index.js')
+  link(rel='stylesheet' href='css/main.css' type='text/css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css' integrity='sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==' crossorigin='anonymous' referrerpolicy='no-referrer')
+  title Login
+#header
+  .circle-logo
+    img(src='css/images/MJ.png' alt='')
+  h3
+    mono.white MEHEER
+  nav.navbar
+    ul.navbar-links
+      li
+        a(href='/') Home
+      li
+        a(href='/projects') Projects
+      li
+        a(href='/certificates') Certificates
+      li
+        a(href='/comments') Comments
+      li
+        a(href='/sign-up') Sign-Up
+  .hamburger
+    .line1
+    .line2
+    .line3
+#pain
+  #oof
+    ah.mc
+      form#f2(action='/login' method='post')
+        #si.signin.dnh
+          h1 Login
+          br
+          p.red#pug-variable= error
+          br
+          h3 Username
+          input#username(type='text' name='username' placeholder='Username...' required='')
+          h3 Password:
+          input#password(type='password' name='password' placeholder='Password...' required='')
+          br
+          button#submitbutton(type='submit') Login!!
+          ps
+            | Dont have a account? 
+            a#linko(href='/sign-up') Sign-up!! 
