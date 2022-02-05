@@ -23,7 +23,8 @@ module.exports = function(app) {
     myDB(async (client) => {
       const adn = await client.db('WEB').collection('LS');
     
-      app.route('/login').post(passport.authenticate('local', { failureRedirect: '/sign-up' }), (req, res) => {
+      app.route('/login').post(passport.authenticate('local', 
+        { failureRedirect: "/sign-up"}), (req, res) => {
         res.redirect('/add-comments');
       });
     
@@ -33,7 +34,7 @@ module.exports = function(app) {
     
       app.route('/logout').get((req, res) => {
         req.logout();
-        res.redirect('/');
+        res.render('pug/index', {show:true});
       });
         
       app.route('/register').post(

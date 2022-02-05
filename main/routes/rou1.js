@@ -1,7 +1,7 @@
 module.exports = function(app) {
     
     app.get('/', (req, res) => {
-      res.render('pug/index');
+      res.render('pug/index', {show:true});
     });
     
     app.get('/projects', (req, res) => {
