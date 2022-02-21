@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
 /*imp*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: 'Source Sans Pro';
+    font-weight : 0;
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smoo   th;
 }
 
 body{
-    background-color:#16161A;
+    background-color:#242526    ;
     font-size: 24px;
     font-weight: bold;
+}
+
+p {
+    font-size: 22px;
+    color: whitesmoke;
 }
 
 /* NAVBAR */
@@ -24,12 +32,12 @@ body{
     position: fixed;
     align-items: center;
     z-index: 5;
-    transition:1s;
-    background-color: transparent;
+    transition:0.5s;
+    background-color: #00a9e200 ;
 }
 #header:hover{
-    background-color: #00a9e2;
     opacity: 1;
+    background-color: #00a9e2 ;
 }
 
 .navbar{
@@ -61,8 +69,8 @@ body{
 }
 .circle-logo img{
     padding-top: 10px;
-    width: 80px;
-    height: 80px; 
+    width: 70px;
+    height: 70px; 
 }
 
 .navbar-links li{
@@ -187,7 +195,7 @@ body{
 
 /*Scroll Bar*/
 ::-webkit-scrollbar{
-    width:10px;
+    width:13px;
     background-color:black;
 }
 
@@ -197,8 +205,7 @@ body{
     border:2px solid #008a91;
 }
 
-::-webkit-scrollbar-track{
-    margin-top:30px;
+::-webkit-scrollbar-track{  
     border-radius:20px;
 }
 
@@ -248,8 +255,8 @@ body{
 }
 
 .sub{
-    background: #16161A;
-    border-radius: 10px;
+    background: #242526;
+    border-radius: 20px;
     padding: 10px;
     color: #7f8a9a;
 }
@@ -261,7 +268,7 @@ body{
 }
 
 .sub2{
-    background: #16161A;
+    background: #242526;
     border-radius: 20px;
     padding: 15px;
     color: #7f8a9a;
@@ -277,8 +284,9 @@ body{
 .hl1{
     color: rgb(255, 255, 255);
     background-color: #00e1ff; 
-    margin: 0 0 0 0;
+    margin: 0 auto 0 auto ;
     text-align: center;
+    width: 60%;
     padding: 10px 0 10px 0;
     border-radius: 20px; 
 }
@@ -292,7 +300,7 @@ body{
 }   
 
 .footItem{
-    background: #16161A;
+    background: #242526;
     border-radius: 20px;
     padding: 10px;
     color: #7f8a9a;
@@ -331,7 +339,7 @@ a{
     height: 255px;
     border-radius: 20px;
     position: relative;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .content{
@@ -341,7 +349,7 @@ a{
     overflow: hidden;
     background-image: linear-gradient(62deg, #1d1d1def 0%,
      #1b1b1bee 100%);
-    transition: all 1s;
+    transition: all 0.5s;
 }
     
 .p-elem:hover img{
@@ -371,7 +379,7 @@ a{
         flex-basis: 100%;
     }
     .sub2{
-        background: #16161A;
+        background: #242526;
         border-radius: 20px;
         padding: 10px;
         color: #7f8a9a;
@@ -425,7 +433,7 @@ a{
     margin: 10px 0 10px 0;
     width: 100%;
     color: rgb(255, 255, 255);
-    background-color: rgb(88, 88, 88) ;
+    background-color: #3A3B3C ;
     border: 2px solid #00e1ff;
     font-size: 18px;
     border-radius: 10px;
@@ -434,7 +442,7 @@ a{
 
 #linko {
     text-decoration: none;
-    color: aqua;
+    color: #242526;
 }
 
 .signin{
@@ -455,29 +463,31 @@ a{
 .dnh{
     display: block;
 }
+
 #pain{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 #oof{
     width: 100%;
     color: white;
-    margin-top: 30vh;
+    margin-top: 25vh;
     display: flex;
     padding: 10px;
     flex-direction: column;
     align-items: center;
 }
 .mc {
-    box-shadow: 10px 10px 15px #004cff;
+    background-color: #0e96a0;
     padding: 5px;
     border-radius: 15px; 
 }
 input{
     margin: 10px 0 10px 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 30px;
     padding: 3px;
@@ -485,8 +495,6 @@ input{
     font-size: 18px;
     border-radius: 10px;
     border: 1px solid black; 
-    border-right: 5px solid #00e1ff;
-    border-left: 5px solid #00e1ff;
 }
 
 .box {
@@ -501,7 +509,7 @@ input{
 
 textarea {
     margin: 10px 0 10px 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     padding: 3px;
     height: 150px;
@@ -509,20 +517,16 @@ textarea {
     font-size: 18px;
     border-radius: 10px;
     border: 1px solid black; 
-    border-right: 5px solid #00e1ff;
-    border-left: 5px solid #00e1ff;
-}
-
-h3 {
-    margin-top: 10px;
 }
 
 #com {
     height: 50px; 
 }
 
+
 .white {
     color: white;
+    font-size: 20px;
 }
 
 .op {
@@ -541,7 +545,9 @@ h3 {
 #addcomlink {
     text-align: left;
     margin-top: 30px;
-    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 40px;
     width: 20%;
     background-color: #00e1ff;
@@ -577,3 +583,9 @@ h3 {
 .red {
     color: rgb(201, 0, 0);
 }
+
+/* .pbox {
+    padding : 15px;
+    border-radius: 20px;
+    background-color: rgba(0, 156, 196, 0.568); 
+} */
