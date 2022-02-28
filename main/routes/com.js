@@ -33,6 +33,8 @@ module.exports = function(app) {
                       comment: book.comment
                   };
               });
+        //    const rev = formatData.reverse()
+        //    res.json(rev)                                 // this is for the reverese json from bottom to top
               res.json(formatData)
           }
       });
